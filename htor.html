@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<title>Learning Japanese</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<script type="text/javascript" src="html5shiv.js"></script>
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
+		<![endif]-->
+		<script type="text/javascript" src="htor.js" charset="UTF-8"></script>
+		<script type="text/javascript">useKatakana = false;</script>
+	</head>
+	<body onload="setup()">
+	
+		<header>
+			<h1>Learning Japanese</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html"><p>Home</p></a></li>
+				<li><a href="htor.html"><p>Hiragana to Romaji</p></a></li>
+				<li><a href="ktor.html"><p>Katakana to Romaji</p></a></li>
+				<li><a href="rtoh.html"><p>Romaji to Hiragana</p></a></li>
+				<li><a href="rtok.html"><p>Romaji to Katakana</p></a></li>
+				<li><a href="kanatow.html"><p>Kana to Words</p></a></li>
+				<li><a href="wtokana.html"><p>Words to Kana</p></a></li>
+			</ul>
+		</nav>
+		
+		<div id="main">
+			<div id="content">
+				<h1>Hiragana to Romaji</h1>
+				<form id="mainform" onsubmit="next(); return false;">
+					<table>
+						<tr>
+							<th id="textA"> </th>
+							<th id="textB"> </th>
+							<th id="numCorrect">This should not appear</th>
+						</tr>
+					</table>
+					<br/>
+					Type the rōmaji:<br/>
+					<input type="text" size="4"	id="userInput" autocomplete="off" />
+					<input type="submit" value="Start" id="submitButton" /><br /><br/>
+					<input type="checkbox" id="dhCheckbox"/>
+					<label for="dhCheckbox">Include Dakuten/Handakuten</label><br/><br/><br/>
+					<input type="button" value="Restart" id="restartButton" onclick="setup()" />
+				</form>
+			</div>
+		</div>
+			
+		<footer>
+			<p>Created by Nathan Aplin. Contact: solariousz(at)gmail(dot)com</p>
+		</footer>
+	</body>
+</html>

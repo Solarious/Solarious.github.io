@@ -1,0 +1,236 @@
+/* Reminder of box model */
+/* Margin - Clears an area around the border. The margin does not have a background color, it is completely transparent */
+/* Border - A border that goes around the padding and content. The border is affected by the background color of the box */
+/* Padding - Clears an area around the content. The padding is affected by the background color of the box */
+/* Content - The content of the box, where text and images appear */
+
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Stops the margin, padding and border of an element from affecting the width of an element, excluding images */
+:not(img) {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	background-color: #00AAFF;
+	height: 100px;
+}
+
+header h1 {
+	margin: auto;
+	padding: 25px;
+	width: 50%;
+	display: block;
+	text-align: center;
+	
+}
+
+nav {
+	height: 45px;
+	background-color: #98bf21;
+}
+
+nav ul {
+	/* Removes the list markers */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 200px;
+}
+
+nav ul li {
+	/* Makes the list horizontal */
+	float: left;
+	height: 45px;
+}
+
+nav a {
+	height: 100%;
+	position: relative
+}
+
+nav a p {
+	/* Makes the text vertically aligned */
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width:100%;
+}
+
+/* Visited used so that visited and unvisited links are identical */
+nav a:link, nav a:visited {
+	/* Makes the whole link area clickable and it allows us to specify the width */
+	display: block;
+	width: 120px;
+	color: #FFFFFF;
+	background-color: #98bf21;
+	text-align: center;
+	padding: 4px;
+	/* Remove the underline */
+	text-decoration: none;
+}
+
+/* Hover: when mouse is over link. Active: When link is pressed */
+nav a:hover, nav a:active {
+	background-color:#6a8517;
+}
+
+/* Applies to the element directly after the nav element */
+nav + * {
+	/* Stops element from appearing to the right of the nav bar */
+	clear: left;
+}
+
+#logged-in-as {
+	margin: 0;
+	padding: 4px;
+	height: 30px;
+	float: left;
+}
+
+/* Centers the main part of the page, and gives it its color */
+#main {
+	background-color:#7A991A;
+	margin: auto;
+	display: block;
+	width: 1000px;
+	/* Stretches the main area so that on pages with little content, the footer is on the bottom of the page */
+	min-height: -moz-calc(100% - 195px);
+	min-height: -webkit-calc(100% - 195px);
+	min-height: -o-calc(100% - 195px);
+	min-height: calc(100% - 195px);
+	/* Stops the margins of the div and its inner elements from combining to form a single margin */
+	overflow: auto;
+}
+
+/* Used to add padding to the left and right of the main area */
+#content {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+table {
+	border-spacing: 0;
+}
+
+#textA, #textB {
+	background-color:#FFFFFF;
+	border: 0;
+	padding: 10px;
+	font-size: 400%;
+	min-width: 2em;
+	height: 1.5em;
+}
+
+#textX, #textY, #textZ {
+	background-color:#FFFFFF;
+	border: 0;
+	padding: 10px;
+	font-size: 400%;
+	min-width: 8em;
+	height: 1.5em;
+}
+
+#textZ {
+	font-size: 300%;
+	height: 1.7em;
+}
+
+#numCorrect {
+	padding: 10px;
+	font-size: 200%;
+}
+
+input[type="text"] {
+	font-size: 200%;
+}
+
+input[type="submit"], input[type="button"] {
+	font-size: 150%;
+	width: 4.5em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input[type="button"] {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+	font-size: 150%;
+}
+
+.checkboxGroup {
+	margin-top: 10px;
+	float: left;
+	min-width: 300px;
+}
+
+.clearBoth {
+	clear: both;
+	overflow: hidden;
+}
+
+article {
+	clear: left;
+	margin-bottom: 20px;
+	/* Stops the margins of the div and its inner elements from combining to form a single margin */
+	/* Also makes sure that it stretches to fit its content	 */
+	overflow: auto;
+}
+
+.blockarea {
+	float: left;
+	margin: 10px;
+}
+
+.blockarea h3 {
+	margin: 1px;
+	padding: 1px;
+}
+
+/* Removes border crated by ie */
+a img {
+	border: 0;
+}
+
+footer {
+	background-color:#CCCCCC;
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	padding-left: 20px;
+	/* Stops the margins of the div and its inner elements from combining to form a single margin */
+	overflow: hidden;
+	font-size: 12px;
+}
+
+footer p {
+	width: 1000px;
+	margin: auto;
+	margin-top: 16px;
+}
+
+footer img {
+	float: left;
+}
