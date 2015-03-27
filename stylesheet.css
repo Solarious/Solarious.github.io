@@ -192,6 +192,15 @@ input[type="checkbox"] {
 	overflow: hidden;
 }
 
+#wordList table, #wordList td, #wordList th {
+	border: 1px solid black;
+}
+
+#wordList table {
+	table-layout: fixed;
+	width: 100%;
+}
+
 article {
 	clear: left;
 	margin-bottom: 20px;
