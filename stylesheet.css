@@ -186,7 +186,8 @@ input[type="checkbox"] {
 	min-width: 300px;
 }
 
-.clearBoth {
+/* Applies to the element directly after element with id=checkBoxes */
+#checkBoxes + * {
 	clear: both;
 	overflow: hidden;
 }

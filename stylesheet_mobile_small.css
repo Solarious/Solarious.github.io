@@ -1,0 +1,17 @@
+header h1 {
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: left;
+}
+
+nav ul {
+	margin-left: 0px;
+}
+
+#main {
+	width: auto;
+}
+
+* {
+	font-size: 100%;
+}
