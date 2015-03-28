@@ -27,9 +27,14 @@ function createWordsTable() {
 	headerNodes[2].textContent = "Romaji";
 	headerNodes[3].textContent = "Meaning";
 	
+	var alt = true;
 	for (key in words) {
+		alt = !alt;
 		for (var i = 0; i < words[key].length; i++) {
 			var rowNode = document.createElement("tr");
+			if (alt) {
+				rowNode.className = "alt";
+			}
 			tableNode.appendChild(rowNode);
 			var tdNodes = [];
 			for (var j = 0; j < 4; j++) {

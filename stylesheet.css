@@ -201,6 +201,14 @@ input[type="checkbox"] {
 	width: 100%;
 }
 
+#wordList th {
+	background-color:#6D8C1A;
+}
+
+#wordList .alt {
+	background-color:#6D8C1A;
+}
+
 article {
 	clear: left;
 	margin-bottom: 20px;
