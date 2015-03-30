@@ -220,3 +220,28 @@ words["Chapter 4: い type modifiers (part 6)"] = [
 	["とおい", "tooi", "far"],
 	["ちかい", "chikai", "near/close"]
 ];
+
+words["Chapter 5: Body Parts"] = [
+	["かお", "kao", "face"],
+	["あたま", "atama", "head"],
+	["かみ", "kami", "hair"],
+	["め", "me", "eye"],
+	["みみ", "mimi", "ear"],
+	["はな", "hana", "nose"],
+	["くち", "kuchi", "mouth"],
+	["て", "te", "hand/arm"],
+	["あし", "ashi", "leg/foot"],
+	["しっぽ", "shippo", "tail"]
+];
+
+words["Chapter 5: Colours"] = [
+	["いろ", "iro", "colour"],
+	["しろ", "shiro", "white"],
+	["くろ", "kuro", "black"],
+	["あか", "aka", "red"],
+	["あお", "ao", "blue"],
+	["しゃいろ", "chairo", "brown"],
+	["みどり", "midori", "green"],
+	["きいろ", "kiiro", "yellow"],
+	["むらさき", "murasaki", "purple"]
+];
