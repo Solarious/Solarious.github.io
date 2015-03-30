@@ -103,8 +103,23 @@ words["Chapter 2: Personal relationships"] = [
 	["ともだち", "tomodachi", "friend"]
 ];
 
+words["Chapter 2: Subjects"] = [
+	["えいご", "eigo", "english"],
+	["にほんご", "nihongo", "japanese"],
+	["すうがく", "suugaku", "mathematics"],
+];
+
 words["Chapter 2: School/Faculty of ~"] = [
-	
+	["きょういくがくぶ", "kiyouikugakubu", "School of Education"],
+	["じんぶんがくぶ", "jimbungakubu", "School of Humanities"],
+	["けいざいがくぶ", "Keizaigakubu", "School of Economics"],
+	["ほうがくぶ", "hougakubu", "Law School"],
+	["しょうがくぶ", "shougakubu", "School of Commerce"],
+	["いがくぶ", "igakubu", "Medical School"],
+	["ぶんがくぶ", "bungakubu", "School of Literature"],
+	["りがくぶ", "rigakubu", "School of Science"],
+	["こうがくぶ", "kougakubu", "School of Engineering"],
+	["なにがくぶ", "nanigakubu", "What school"]
 ];
 
 words["Chapter 3: Nouns"] = [
