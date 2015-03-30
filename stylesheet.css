@@ -42,7 +42,6 @@ header h1 {
 }
 
 nav {
-	height: 45px;
 	background-color: #98bf21;
 }
 
@@ -51,13 +50,14 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 	margin-left: 200px;
 }
 
 nav ul li {
 	/* Makes the list horizontal */
 	float: left;
-	height: 45px;
+	height: 3em;
 }
 
 nav a {
@@ -80,7 +80,7 @@ nav a p {
 nav a:link, nav a:visited {
 	/* Makes the whole link area clickable and it allows us to specify the width */
 	display: block;
-	width: 120px;
+	width: 7.5em;
 	color: #FFFFFF;
 	background-color: #98bf21;
 	text-align: center;
