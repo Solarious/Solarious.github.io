@@ -221,7 +221,7 @@ words["Chapter 4: い type modifiers (part 6)"] = [
 	["ちかい", "chikai", "near/close"]
 ];
 
-words["Chapter 5: Body Parts"] = [
+words["Chapter 4: Body Parts"] = [
 	["かお", "kao", "face"],
 	["あたま", "atama", "head"],
 	["かみ", "kami", "hair"],
@@ -234,7 +234,7 @@ words["Chapter 5: Body Parts"] = [
 	["しっぽ", "shippo", "tail"]
 ];
 
-words["Chapter 5: Colours"] = [
+words["Chapter 4: Colours"] = [
 	["いろ", "iro", "colour"],
 	["しろ", "shiro", "white"],
 	["くろ", "kuro", "black"],
