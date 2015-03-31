@@ -214,8 +214,8 @@ words["Chapter 4: い type modifiers (part 5)"] = [
 ];
 
 words["Chapter 4: い type modifiers (part 6)"] = [
-	["わかりやすい", "Wakariy asui", "easy to understand"],
-	["わかりにくい", "Wakari nikui", "difficult to understand"],
+	["わかりやすい", "Wakariyasui", "easy to understand"],
+	["わかりにくい", "Wakarinikui", "difficult to understand"],
 	["きたない", "kitanai", "dirty"],
 	["とおい", "tooi", "far"],
 	["ちかい", "chikai", "near/close"]
