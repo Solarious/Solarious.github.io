@@ -7,7 +7,7 @@ words["Chapter 1: Basic"] = [
 	["がくせい", "gakusei", "student"],
 	["おくに", "okuni", "country"],
 	["こちら", "kochira", "this person (formal, polite)"],
-	["せんえい", "sensei", "teacher"],
+	["せんせい", "sensei", "teacher"],
 	["だれ", "dare", "who"],
 	["どなた", "donata", "who (formal)"],
 	["どちら", "dochira", "where"],

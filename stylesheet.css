@@ -186,6 +186,10 @@ input[type="checkbox"] {
 	min-width: 300px;
 }
 
+#dnotshowromaji {
+	margin-left: 2em;
+}
+
 /* Applies to the element directly after element with id=checkBoxes */
 #checkBoxes + * {
 	clear: both;

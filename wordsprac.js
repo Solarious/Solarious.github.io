@@ -12,6 +12,12 @@ function setElementText(id, text) {
 	document.getElementById(id).textContent = text;
 }
 
+function isChecked(id) {
+	var element = document.getElementById(id);
+	if (element == null) return false;
+	return document.getElementById(id).checked;
+}
+
 var tuples;
 var num; // part of tuples we are up to
 var stage; // true is textB has text in it, false if empty
@@ -135,12 +141,14 @@ function next() {
 		} else {
 			nodeY.textContent = tuples[num][1];
 		}
-		if (reversed || document.getElementById("wmoCheckbox").checked) {
+		if (reversed && isChecked("dnotshowromaji")) {
+			nodeSub.value = "Next";
+		} else if (reversed || isChecked("wmoCheckbox")) {
 			nodeSub.value = "Reveal";
 		} else {
 			nodeSub.value = "Meaning";
 		}
-		if (!reversed && !document.getElementById("wmoCheckbox").checked) {
+		if (!reversed && !isChecked("wmoCheckbox")) {
 			var nodeUserInput = document.getElementById("userInput")
 			if (nodeUserInput.value.replace(/\s+/g, '') == tuples[num][1].replace(/\s+/g, '')) {
 				nodeY.style.color = "#00FF00";
@@ -153,6 +161,11 @@ function next() {
 			setElementText("numCorrect", text);
 		}
 	} else if (stage == 2) {
+		if (isChecked("dnotshowromaji")) {
+			stage = 3;
+			next();
+			return;
+		}
 		stage = 3;
 		var nodeZ = document.getElementById("textZ");
 		if (reversed) {
@@ -162,7 +175,6 @@ function next() {
 		}
 		var nodeSub = document.getElementById("submitButton");
 		nodeSub.value = "Next";
-		
 	} else {
 		stage = 1;
 		num++;
