@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">	
@@ -10,10 +10,10 @@
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
-		<script type="text/javascript" src="words.js" charset="UTF-8"></script>
-		<script type="text/javascript" src="listwords.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="sentencesprac.js" charset="UTF-8"></script>
+		<script type="text/javascript"></script>
 	</head>
-	<body onload="createWordsTable()">
+	<body onload="setup();">
 	
 		<header>
 			<h1>Learning Japanese</h1>
@@ -35,10 +35,20 @@
 		
 		<div id="main">
 			<div id="content">
-				<h1>Word List</h1>
-				<br/><br/>
-				<div id="wordList"></div>
-				<br/><br/>
+				<h1>Sentences</h1>
+				<form id="mainform" onsubmit="next(); return false;">
+					<table>
+						<tr>
+							<th id="textX"> </th>
+						</tr>
+						<tr>
+							<th id="textY"> </th>
+						</tr>
+					</table>
+					<br/>
+					<input type="submit" value="Start" id="submitButton" /><br/><br/>
+					<div id="checkBoxes">Word Groups (select at least one):<br/></div>
+				</form>
 			</div>
 		</div>
 			

@@ -245,3 +245,16 @@ words["Chapter 4: Colours"] = [
 	["きいろ", "kiiro", "yellow"],
 	["むらさき", "murasaki", "purple"]
 ];
+
+words["Chapter 5: Location words"] = [
+	["うえ", "ue", "above"],
+	["した", "shita", "under"],
+	["まえ", "mae", "in front of"],
+	["うしろ", "ushiro", "behind"],
+	["なか", "naka", "inside"],
+	["そと", "soto", "outside"],
+	["みぎ", "migi", "right"],
+	["ひだり", "hidari", "left"],
+	["となり", "tonari", "next to"],
+	["ちかく", "chikaku", "nearby"]
+];
