@@ -158,7 +158,7 @@ words["Chapter 3: Expressions indication degree"] = [
 	["あまり", "amari", "(not) very much"],
 	["ちっとも", "chittomo", "(not) at all"],
 	["ぜんぜん", "zenzen", "(not) at all"],
-	["ちゅっと", "chutto", "a little"],
+	["ちょっと", "chotto", "a little"],
 	["とても", "totemo", "very"]
 ];
 
