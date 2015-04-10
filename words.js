@@ -78,14 +78,17 @@ words["Chapter 2: Nouns"] = [
 	["りゅうがくせい", "ryuugakusei", "overseas student"]
 ];
 
-words["Chapter 2: Buildings/Facilities"] = [
+words["Chapter 2: Buildings/Facilities Part 1"] = [
 	["がっこう", "gakkou", "school"],
 	["がくしょく", "gakushoku", "canteen"],
 	["カフェテリア", "kafeteria", "cafeteria"],
 	["きっさてん", "kissaten", "coffee shop"],
 	["きょうしつ", "kyoushitsu", "classroom"],
 	["ぎんこう", "ginkou", "bank"],
-	["けんきゅうしつ", "kenkyuushitsu", "lecturer's office"],
+	["けんきゅうしつ", "kenkyuushitsu", "lecturer's office"]
+];
+
+words["Chapter 2: Buildings/Facilities Part 2"] = [
 	["スポーツセンター", "supootsu sentaa", "sports centre"],
 	["だいがく", "daigaku", "university"],
 	["たてもの", "tatemono", "building"],
@@ -146,7 +149,7 @@ words["Chapter 3: な type modifiers"] = [
 	["きれい", "kirei", "beautiful"],
 	["たいへん", "taihen", "challenging/tough/demanding"],
 	["げんき", "genki", "well/fine/energetic"],
-	["にぎやき", "nigiyaki", "lively"],
+	["にぎやか", "nigiyaka", "lively"],
 	["しずか", "shizuka", "quiet"],
 	["ゆうめい", "yuumei", "famous"],
 	["しんせつ", "shinsetsu", "kind"],
