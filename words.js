@@ -174,6 +174,36 @@ words["Chapter 3: Expressions"] = [
 	["すみません", "sumimasen", "excuse me / i am sorry / thank you"]
 ];
 
+words["Chapter 4: Nouns (part 1)"] = [
+	["あさ", "asa", "morning"],
+	["いぬ", "inu", "dog"],
+	["うち", "uchi", "house (your house)"],
+	["おとこ", "otoko", "man/male"],
+	["おんな", "onna", "woman/female"],
+	["かばん", "kaban", "bag (hiragana)"],
+	["くつ", "kutsu", "shoes"]
+];
+
+words["Chapter 4: Nouns (part 2)"] = [
+	["こうぎ", "kougi", "lecture"],
+	["きこう", "kikou", "climate"],
+	["じゅぎょう", "jugyou", "class/lesson"],
+	["ズボン", "zubon", "pants"],
+	["たべもの", "tabemono", "food"],
+	["ところ", "tokoro", "place"],
+	["ねこ", "neko", "cat"]
+];
+
+words["Chapter 4: Nouns (part 3)"] = [
+	["はつおん", "hatsuon", "pronunciation"],
+	["ばん", "ban", "evening/night time"],
+	["ひる", "hiru", "noon/day time"],
+	["ぶんぽう", "bunpou", "grammer"],
+	["やま", "yama", "mountain"],
+	["りょうり", "ryouri", "dish/food/cuisine"],
+	["れんしゅう", "renshuu", "practive"]
+];
+
 words["Chapter 4: い type modifiers (part 1)"] = [
 	["おおきい", "ookii", "big"],
 	["ちいさい", "chiisai", "small"],
