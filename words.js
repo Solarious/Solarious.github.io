@@ -291,3 +291,17 @@ words["Chapter 5: Location words"] = [
 	["となり", "tonari", "next to"],
 	["ちかく", "chikaku", "nearby"]
 ];
+
+words["Chapter 5: Counting people"] = [
+	["ひとり", "hitori", "one person"],
+	["ふたり", "futari", "two people"],
+	["さんにん", "sannin", "three people"],
+	["よにん", "yonin", "four people"],
+	["ごにん", "gonin", "five people"],
+	["ろくにん", "rokunin", "six people"],
+	["しちにん", "shichinin", "seven people"],
+	["はちにん", "hachinin", "eight people"],
+	["きゅうにん", "kyuunin", "nine people"],
+	["じゅうにん", "juunin", "ten people"],
+	["じゅういちにん", "juuichinin", "eleven people"]
+];
