@@ -292,6 +292,32 @@ words["Chapter 5: Location words"] = [
 	["ちかく", "chikaku", "nearby"]
 ];
 
+words["Chapter 5: Family (part 1)"] = [
+	["かぞく", "kazoku", "family (self)"],
+	["ごかぞく", "gokazoku", "family (other)"],
+	["りょうしん", "ryoushin", "parents (self)"],
+	["ごりょうしん", "goryoushin", "parents (other)"],
+	["きょうだい", "kyoudai", "siblings (self)"],
+	["ごきょうだい", "gokyoudai", "siblings (other)"],
+	["あに", "ani", "elder brother (self)"],
+	["おにいさん", "oniisan", "elder brother (other)"],
+	["あね", "ane", "elder sister (self)"],
+	["おねえさん", "oneesan", "elder sister (other)"]
+];
+
+words["Chapter 5: Family (part 2)"] = [
+	["おとうと", "otouto", "younger brother (self)"],
+	["おとうとさん", "otoutosan", "younger brother (other)"],
+	["いもうと", "imouto", "younger sister (self)"],
+	["いもうとさん", "imoutosan", "younger sister (other)"],
+	["かない", "kanai", "wife (self)"],
+	["おくさん", "okusan", "wife (other)"],
+	["しゅじん", "shujin", "husband (self)"],
+	["ごしゅじん", "goshujin", "husband (other)"],
+	["こども", "kodomo", "child (self)"],
+	["おこさん", "okosan", "child (other)"]
+];
+
 words["Chapter 5: Counting people"] = [
 	["ひとり", "hitori", "one person"],
 	["ふたり", "futari", "two people"],
