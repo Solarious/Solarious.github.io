@@ -331,3 +331,30 @@ words["Chapter 5: Counting people"] = [
 	["じゅうにん", "juunin", "ten people"],
 	["じゅういちにん", "juuichinin", "eleven people"]
 ];
+
+words["Chapter 6: Verbs"] = [
+	["いきます", "ikimasu", "to go"],
+	["きます", "kimasu", "to come"],
+	["かえります", "kaerimasu", "to return"],
+	["はいります", "hairimasu", "to enter"],
+	["あそびます", "asobimasu", "to play"],
+	["やすみます", "yasumimas", "to rest/have a break"],
+	["さんぽします", "sanposhimasu", "to take a walk"],
+	["べんきょうします", "benkyou", "to study"],
+	["テニスします", "tenisushimasu", "to play tennis"]
+];
+
+words["Chapter 6: Modifiers of time"] = [
+	["きょう", "kyou", "today"],
+	["あした", "ashita", "tomorrow"],
+	["あさって", "asatte", "day after tomorrow"],
+	["ごぜんちゅう", "gozenchuu", "in the morning"],
+	["ごご", "gogo", "afternoon"],
+	["こんばん", "konban", "tonight"],
+	["こんしゅう", "konshuu", "this week"],
+	["らいしゅう", "raishuu", "next week"],
+	["こんげつ", "kongetsu", "this month"],
+	["らいげつ", "raigetsu", "next month"],
+	["ことし", "kotoshi", "this year"],
+	["らいねん", "rainen", "next year"]
+];
