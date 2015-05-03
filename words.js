@@ -358,3 +358,30 @@ words["Chapter 6: Modifiers of time"] = [
 	["ことし", "kotoshi", "this year"],
 	["らいねん", "rainen", "next year"]
 ];
+
+words["Chapter 6: Days of the week"] = [
+	["なんようび", "nanyoubi", "What day of the week?", "何曜日"],
+	["にちようび", "nichiyoubi", "Sunday", "日曜日"],
+	["げつようび", "getsuyoubi", "Monday", "月曜日"],
+	["かようび", "kayoubi", "Tuesday", "火曜日"],
+	["すいようび", "suiyoubi", "Wednesday", "水曜日"],
+	["もくようび", "mokuyoubi", "Thursday", "木曜日"],
+	["きにょうび", "kinyoubi", "Friday", "金曜日"],
+	["どようび", "doyoubi", "Saturday", "土曜日"]
+];
+
+words["Chapter 6: Time"] = [
+	["なんじ", "nanji", "what time?"],
+	["いちじ", "ichiji", "one o'clock"],
+	["にじ", "niji", "two o'clock"],
+	["さんじ", "sanji", "three o'clock"],
+	["よじ", "yoji", "four o'clock"],
+	["ごじ", "goji", "five o'clock"],
+	["ろくじ", "rokuji", "six o'clock"],
+	["しちじ", "shichiji", "seven o'clock"],
+	["はちじ", "hachiji", "eight o'clock"],
+	["くじ", "kuji", "nine o'clock"],
+	["じゅうじ", "juuji", "ten o'clock"],
+	["じゅういちじ", "juichiji", "eleven o'clock"],
+	["じゅうにじ", "juuniji", "twelve o'clock"],
+];
