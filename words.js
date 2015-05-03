@@ -366,7 +366,7 @@ words["Chapter 6: Days of the week"] = [
 	["かようび", "kayoubi", "Tuesday", "火曜日"],
 	["すいようび", "suiyoubi", "Wednesday", "水曜日"],
 	["もくようび", "mokuyoubi", "Thursday", "木曜日"],
-	["きにょうび", "kinyoubi", "Friday", "金曜日"],
+	["きんようび", "kinyoubi", "Friday", "金曜日"],
 	["どようび", "doyoubi", "Saturday", "土曜日"]
 ];
 
