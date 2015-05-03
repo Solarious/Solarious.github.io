@@ -385,3 +385,23 @@ words["Chapter 6: Time"] = [
 	["じゅういちじ", "juichiji", "eleven o'clock"],
 	["じゅうにじ", "juuniji", "twelve o'clock"],
 ];
+
+words["Chapter 6: Modifiers of quality"] = [
+	["たくさん", "takusan", "many, a lot (of)"],
+	["おおぜい", "oozei", "many (people)"],
+	["すこし", "sukoshi", "a little/few"],
+	["あまり～ません", "amari~masen", "not many/not much"]
+];
+
+words["Chapter 6: Frequency"] = [
+	["いつも", "itsumo", "always"],
+	["たいてい", "taitei", "usually"],
+	["よく", "yoku", "often"],
+	["ときどき", "tokidoki", "sometimes"],
+	["たまに", "tamani", "occasionally"],
+	["あまり～ません", "amari~masen", "not often"],
+	["ぜんぜん～ません", "zenzen~masen", "not at all"],
+	["まいあさ", "maiasa", "every morning"],
+	["まいばん", "maiban", "every evening"],
+	["まいにち", "mainichi", "every day"]
+];
