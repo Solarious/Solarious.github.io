@@ -405,3 +405,29 @@ words["Chapter 6: Frequency"] = [
 	["まいばん", "maiban", "every evening"],
 	["まいにち", "mainichi", "every day"]
 ];
+
+words["Chapter 7: ～を verbs (Part 1)"] = [
+	["かきます", "kakimasu", "to write", "書きます"],
+	["みます", "mimasu", "to see/watch", "見ます"],
+	["ききます", "kikimasu", "to listen", "聞きます"],
+	["うたいます", "utaimasu", "to sing", "歌います"],
+	["おしえます", "oshiemasu", "to teach", "教えます"],
+	["のみます", "nomimasu", "to drink", "飲みます"],
+	["はなします", "hanashimasu", "to speak", "話します"],
+	["だべます", "", "to eat", "食べます"]
+];
+
+words["Chapter 7: ～を verbs (Part 2)"] = [
+	["すいます", "suimasu", "to smoke"],
+	["つくります", "tsukurimasu", "to make"],
+	["よみます", "yomimasu", "to read", "読みます"],
+	["よびます", "yobimasu", "to call/invite", "呼びます"],
+	["します", "shimasu", "to do"]
+];
+
+words["Chapter 7: ～に verbs"] = [
+	["あいます", "aimasu", "to meet", "会います"],
+	["ききます", "kikimasu", "to ask"],
+	["でんわします", "denwashimasu", "to call"],
+	["れんらくします", "renrakushimasu", "to contact"]
+];
