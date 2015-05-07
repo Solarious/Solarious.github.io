@@ -23,7 +23,7 @@ function createWordsTable() {
 		rowLabelsNode.appendChild(headerNodes[i]);
 	}
 	headerNodes[0].textContent = "Group";
-	headerNodes[1].textContent = "Hiragana/Katakana";
+	headerNodes[1].textContent = "Kanji/Hiragana/Katakana";
 	headerNodes[2].textContent = "Romaji";
 	headerNodes[3].textContent = "Meaning";
 	
@@ -43,7 +43,11 @@ function createWordsTable() {
 			}
 			
 			tdNodes[0].textContent = key;
-			tdNodes[1].textContent = words[key][i][0];
+			if (words[key][i].length > 3) {
+				tdNodes[1].textContent = words[key][i][3] + " (" + words[key][i][0] + ")";
+			} else {
+				tdNodes[1].textContent = words[key][i][0];
+			}
 			tdNodes[2].textContent = words[key][i][1];
 			tdNodes[3].textContent = words[key][i][2];
 		}

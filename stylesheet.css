@@ -171,9 +171,14 @@ input[type="submit"], input[type="button"] {
 	margin-bottom: 10px;
 }
 
-input[type="button"] {
+input[type="button"] :not(#showRomajiKana) {
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+#showRomajiKana {
+	margin-left: 2em;
+	width: auto;
 }
 
 input[type="checkbox"] {
@@ -187,6 +192,10 @@ input[type="checkbox"] {
 }
 
 #dnotshowromaji {
+	margin-left: 2em;
+}
+
+#useKanji {
 	margin-left: 2em;
 }
 
