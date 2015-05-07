@@ -11,8 +11,8 @@
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
 		<script type="text/javascript" src="words.js" charset="UTF-8"></script>
-		<script type="text/javascript" src="wordsprac.js" charset="UTF-8"></script>
-		<script type="text/javascript">reversed = true;</script>
+		<script type="text/javascript" src="wordsprac2.js" charset="UTF-8"></script>
+		<script type="text/javascript">orderKanaToEnglish = false;</script>
 	</head>
 	<body onload="setup()">
 	
@@ -41,7 +41,6 @@
 					<table>
 						<tr>
 							<th id="textX"> </th>
-							<th id="numCorrect">This should not appear</th>
 						</tr>
 						<tr>
 							<th id="textY"> </th>
@@ -52,8 +51,10 @@
 					</table>
 					<br/>
 					<input type="submit" value="Start" id="submitButton" />
-					<input type="checkbox" id="dnotshowromaji"/>
-					<label for="dnotshowromaji">Don't show romaji</label><br/><br/>
+					<input type="checkbox" id="useKanji"/>
+					<label for="useKanji">Use Kanji</label>
+					<input type="button" value="Show Romaji" id="showRomajiKana" onclick="showRomajiB()" />
+					<br/><br/>
 					<div id="checkBoxes">Word Groups (select at least one):<br/></div>
 					<div><input type="button" value="Restart" id="restartButton" onclick="setup()" /></div>
 				</form>

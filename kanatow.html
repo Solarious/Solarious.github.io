@@ -11,7 +11,7 @@
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
 		<script type="text/javascript" src="words.js" charset="UTF-8"></script>
-		<script type="text/javascript" src="wordsprac.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="wordsprac2.js" charset="UTF-8"></script>
 		<script type="text/javascript"></script>
 	</head>
 	<body onload="setup()">
@@ -41,21 +41,20 @@
 					<table>
 						<tr>
 							<th id="textX"> </th>
-							<th id="numCorrect">This should not appear</th>
 						</tr>
 						<tr>
 							<th id="textY"> </th>
 						</tr>
 						<tr>
-							<th id="textZ"> </th>
+							<th id="textZ" class="smallerText"> </th>
 						</tr>
 					</table>
 					<br/>
-					Type the rōmaji:<br/>
-					<input type="text" size="12" id="userInput" autocomplete="off" />
-					<input type="submit" value="Start" id="submitButton" /><br /><br/>
-					<input type="checkbox" id="wmoCheckbox"/>
-					<label for="wmoCheckbox">Word meanings Only</label><br/><br/>
+					<input type="submit" value="Start" id="submitButton" />
+					<input type="checkbox" id="useKanji"/>
+					<label for="useKanji">Use Kanji</label>
+					<input type="button" value="Show Romaji" id="showRomajiKana" onclick="showRomajiA()" />
+					<br/><br/>
 					<div id="checkBoxes">Word Groups (select at least one):<br/></div><br/>
 					<div><input type="button" value="Restart" id="restartButton" onclick="setup()" /></div>
 				</form>

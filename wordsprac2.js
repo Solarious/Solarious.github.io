@@ -230,24 +230,29 @@ function nextEnglishToKana() {
 		
 		// if using kanji is true, and the current word group has kanji, continue
 		// otherwise go to stage 3 and call next()
-		if (!(isChecked(useKanji) && hasKanji(tuples[num]))) {
+		if (isChecked(useKanji) && hasKanji(tuples[num])) {
+			//in case useKanji is selected between stages 2 and 3
+			setElementText(textB, getKanji(tuples[num]));
+			setElementText(textC, getHiragana(tuples[num]));
+			setElementValue(submitButton, "Next");
+			setElementValue(showRomajiKana, "Show Romaji");
+		} else {
 			return next();
-		}
-		
-		setElementText(textC, getHiragana(tuples[num]));
-		setElementValue(submitButton, "Next");
+		}		
 	} else if (stage == 3) {
 		stage = 1;
+		num++;
 		
 		setElementText(textA, getEnglish(tuples[num]));
 		setElementText(textB, "");
 		setElementText(textC, "");
 		setElementValue(submitButton, "Reveal");
+		setElementValue(showRomajiKana, "Show Romaji");
 	}
 }
 
 // fuction for when the showRomajiKana button is pressed when orderKanaToEnglish is true
-function showRomaji() {
+function showRomajiA() {
 	if (stage == 1 || stage == 2 || stage == 3) {
 		var romaji = getRomaji(tuples[num]);
 		if (getElement(textB).textContent == romaji) {
@@ -274,8 +279,27 @@ function showRomaji() {
 }
 
 // fuction for when the showRomajiKana button is pressed when orderKanaToEnglish is false
-function showKanaOrRomaji() {
-	
+function showRomajiB() {
+	if (stage == 1 || stage == 2) {
+		if (getElement(textC).textContent == "") {
+			// if textC is empty, show romaji
+			setElementText(textC, getRomaji(tuples[num]));
+			setElementValue(showRomajiKana, "Hide Romaji");
+		} else {
+			// if textC contains romaji, hide it
+			setElementText(textC, "");
+			setElementValue(showRomajiKana, "Show Romaji");
+		}
+	} else if (stage == 3) {
+		var romaji = getRomaji(tuples[num]);
+		if (getElement(textC).textContent == romaji) {
+			setElementText(textC, getHiragana(tuples[num]));
+			setElementValue(showRomajiKana, "Show Romaji");
+		} else {
+			setElementText(textC, getRomaji(tuples[num]));
+			setElementValue(showRomajiKana, "Show Kana");
+		}
+	}
 }
 
 

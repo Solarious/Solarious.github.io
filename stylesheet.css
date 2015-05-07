@@ -150,7 +150,7 @@ table {
 	height: 1.5em;
 }
 
-#textZ {
+#textZ.smallerText {
 	font-size: 300%;
 	height: 1.7em;
 }
