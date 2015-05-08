@@ -29,6 +29,10 @@ function genStringWS() {
 	return string;
 }
 
+function orderIsKanaToEnglish() {
+	return isChecked("radioKtoE");
+}
+
 // Returns an array of the ids of all the checked checkboxes in the element/div with id=id
 function getAllChecked(id) {
 	
@@ -38,6 +42,7 @@ function getAllChecked(id) {
 
 var groups = {};
 groups["Chapter 3: Likes"] = generateLikes;
+groups["Chapter 4: Colours"] = generateCarColours;
 groups["Chapter 5: Locations"] = generateLocation;
 
 var fieldsOfStudy = [
@@ -95,6 +100,17 @@ var nounsInanimate = [
 	["ほん", "the book"]
 ];
 
+var colours = [
+	["しろ", "しろい", "white"],
+	["くろ", "くろい", "black"],
+	["あか", "あかい", "red"],
+	["あお", "あおい", "blue"],
+	["しゃいろ", "しゃいろい", "brown"],
+	["みどり", "みどりの", "green"],
+	["きいろ", "きいろい", "yellow"],
+	["むらさき", "むらさきの", "purple"]
+];
+
 function generateLikes() {
 	var noun = getRandom(fieldsOfStudy);
 	var option = getRandom(options);
@@ -120,6 +136,20 @@ function generateLocation() {
 	}
 	var sentenceEng = genStringWS(noun1[1], "is", location[1], noun2[1]);
 	return [sentenceJap, sentenceEng];
+}
+
+function generateCarColours() {
+	var colour = getRandom(colours);
+	
+	var sentenceJapA = genString("あのくるまは", colour[0], "です");
+	var sentenceEngA = genStringWS("That car is", colour[2]);
+	var sentenceA = [sentenceJapA, sentenceEngA];
+	
+	var sentenceJapB = genString("あれは", colour[1], "くるまです");
+	var sentenceEngB = genStringWS("That is a", colour[2], "car");
+	var sentenceB = [sentenceJapB, sentenceEngB];
+	
+	return getRandom([sentenceA, sentenceB]);
 }
 
 //------------------------------------------------------
@@ -162,12 +192,13 @@ function next() {
 		setElementText("textX", "");
 		setElementText("textY", "");
 		
-		var selection = [];
+		var selection = []
 		for (key in groups) {
 			if (document.getElementById(key).checked) {
 				selection.push(key);
 			}
 		}
+		
 		if (selection.length == 0) {
 			setElementText("textX", "Select at least one");
 			setElementText("textY", "word group");
@@ -177,11 +208,19 @@ function next() {
 		var fun = groups[getRandom(selection)];
 		sentence = fun();
 		
-		setElementText("textX", sentence[0]);
+		if (orderIsKanaToEnglish()) {
+			setElementText("textX", sentence[0]);
+		} else {
+			setElementText("textX", sentence[1]);
+		}
 		
 		stage = 1;
 	} else {
-		setElementText("textY", sentence[1]);
+		if (orderIsKanaToEnglish()) {
+			setElementText("textY", sentence[1]);
+		} else {
+			setElementText("textY", sentence[0]);
+		}
 		
 		stage = 0;
 	}

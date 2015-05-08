@@ -181,6 +181,10 @@ input[type="button"] :not(#showRomajiKana) {
 	width: auto;
 }
 
+.giveSpaceOnLeft {
+	margin-left: 2em;
+}
+
 input[type="checkbox"] {
 	font-size: 150%;
 }
