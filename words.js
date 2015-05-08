@@ -7,15 +7,15 @@ words["Chapter 1: Basic"] = [
 	["がくせい", "gakusei", "student"],
 	["おくに", "okuni", "country"],
 	["こちら", "kochira", "this person (formal, polite)"],
-	["せんせい", "sensei", "teacher"],
+	["せんせい", "sensei", "teacher", "先生"],
 	["だれ", "dare", "who"],
 	["どなた", "donata", "who (formal)"],
 	["どちら", "dochira", "where"],
 	["なん", "nan", "what"],
-	["なに", "nani", "what"],
+	["なに", "nani", "what", "何"],
 	["はい", "hai", "yes"],
 	["みなさん", "minasan", "everyone"],
-	["わたし", "watashi", "I"]
+	["わたし", "watashi", "I", "私"]
 ];
 
 words["Chapter 1: Greetings"] = [
@@ -41,12 +41,13 @@ words["Chapter 1: Country Names"] = [
 	["タイ", "tai", "Thailand"],
 	["たいわん", "taiwan", "Taiwan"],
 	["ちゅうごく", "chuugoku", "China"],
-	["ドイツ", "doitsu", "Germany"]
+	["ドイツ", "doitsu", "Germany"],
+	["にほん", "nihon", "Japan", "日本"]
 ];
 
 words["Chapter 1: Fields of Study"] = [
-	["きょういく(がく)", "kyouiku(gaku)", "education"],
-	["せいじ(がく)", "seiji(gaku)", "politics"],
+	["きょういく(がく)", "kyouiku(gaku)", "education", "きょういく学"],
+	["せいじ(がく)", "seiji(gaku)", "politics", "せいじ学"],
 	["けいえい(がく)", "keiei(gaku)", "management"],
 	["ほうりつ", "houritsu", "law"],
 	["ほうがく", "hougaku", "law"],
@@ -73,13 +74,13 @@ words["Chapter 2: Nouns"] = [
 	["ノート", "nooto", "notebook"],
 	["バッグ", "baggu", "bag"],
 	["ビール", "biiru", "beer"],
-	["ほん", "hon", "book"],
+	["ほん", "hon", "book", "本"],
 	["ペン", "pen", "pen"],
-	["りゅうがくせい", "ryuugakusei", "overseas student"]
+	["りゅうがくせい", "ryuugakusei", "overseas student", "りゅう学生"]
 ];
 
 words["Chapter 2: Buildings/Facilities Part 1"] = [
-	["がっこう", "gakkou", "school"],
+	["がっこう", "gakkou", "school", "学こう"],
 	["がくしょく", "gakushoku", "canteen"],
 	["カフェテリア", "kafeteria", "cafeteria"],
 	["きっさてん", "kissaten", "coffee shop"],
@@ -90,10 +91,10 @@ words["Chapter 2: Buildings/Facilities Part 1"] = [
 
 words["Chapter 2: Buildings/Facilities Part 2"] = [
 	["スポーツセンター", "supootsu sentaa", "sports centre"],
-	["だいがく", "daigaku", "university"],
+	["だいがく", "daigaku", "university", "大学"],
 	["たてもの", "tatemono", "building"],
 	["としょかん", "toshokan", "library"],
-	["みせ", "mise", "shop"],
+	["みせ", "mise", "shop", "店"],
 	["ゆうびんきょく", "yuubinkyoku", "post office"],
 	["トイレ", "toire", "toilet"]
 ];
@@ -103,13 +104,13 @@ words["Chapter 2: Personal relationships"] = [
 	["はは", "haha", "mother (humble)"],
 	["おとおさん", "otoosan", "father"],
 	["ちち", "chichi", "father (humble)"],
-	["ともだち", "tomodachi", "friend"]
+	["ともだち", "tomodachi", "friend", "友だち"]
 ];
 
 words["Chapter 2: Subjects"] = [
 	["えいご", "eigo", "english"],
-	["にほんご", "nihongo", "japanese"],
-	["すうがく", "suugaku", "mathematics"],
+	["にほんご", "nihongo", "japanese", "日本語"],
+	["すうがく", "suugaku", "mathematics", "すう学"],
 ];
 
 words["Chapter 2: School/Faculty of ~"] = [
@@ -135,7 +136,7 @@ words["Chapter 3: Nouns"] = [
 	["ひるま", "hiruma", "day time"],
 	["へや", "heya", "room"],
 	["べんきょう", "benkyou", "study"],
-	["まち", "machi", "town/city"],
+	["まち", "machi", "town/city", "町"],
 	["よる", "yoru", "night"],
 	["りょう", "ryou", "dormitory, (student) residence"],
 	["ロック", "rokku", "rock music"]
@@ -143,9 +144,9 @@ words["Chapter 3: Nouns"] = [
 
 words["Chapter 3: な type modifiers"] = [
 	["すき", "suki", "to like"],
-	["だいすき", "daisuki", "to like very much"],
+	["だいすき", "daisuki", "to like very much", "大すき"],
 	["きらい", "kirai", "to dislike"],
-	["だいきらい", "daikirai", "to hate"],
+	["だいきらい", "daikirai", "to hate", "大きらい"],
 	["きれい", "kirei", "beautiful"],
 	["たいへん", "taihen", "challenging/tough/demanding"],
 	["げんき", "genki", "well/fine/energetic"],
@@ -175,11 +176,11 @@ words["Chapter 3: Expressions"] = [
 ];
 
 words["Chapter 4: Nouns (part 1)"] = [
-	["あさ", "asa", "morning"],
-	["いぬ", "inu", "dog"],
-	["うち", "uchi", "house (your house)"],
-	["おとこ", "otoko", "man/male"],
-	["おんな", "onna", "woman/female"],
+	["あさ", "asa", "morning", "朝"],
+	["いぬ", "inu", "dog", "犬"],
+	["うち", "uchi", "house (your house)", "家"],
+	["おとこ", "otoko", "man/male", "男"],
+	["おんな", "onna", "woman/female", "女"],
 	["かばん", "kaban", "bag (hiragana)"],
 	["くつ", "kutsu", "shoes"]
 ];
@@ -189,23 +190,23 @@ words["Chapter 4: Nouns (part 2)"] = [
 	["きこう", "kikou", "climate"],
 	["じゅぎょう", "jugyou", "class/lesson"],
 	["ズボン", "zubon", "pants"],
-	["たべもの", "tabemono", "food"],
+	["たべもの", "tabemono", "food", "食べもの"],
 	["ところ", "tokoro", "place"],
 	["ねこ", "neko", "cat"]
 ];
 
 words["Chapter 4: Nouns (part 3)"] = [
 	["はつおん", "hatsuon", "pronunciation"],
-	["ばん", "ban", "evening/night time"],
+	["ばん", "ban", "evening/night time", "晩"],
 	["ひる", "hiru", "noon/day time"],
 	["ぶんぽう", "bunpou", "grammer"],
-	["やま", "yama", "mountain"],
+	["やま", "yama", "mountain", "山"],
 	["りょうり", "ryouri", "dish/food/cuisine"],
 	["れんしゅう", "renshuu", "practive"]
 ];
 
 words["Chapter 4: い type modifiers (part 1)"] = [
-	["おおきい", "ookii", "big"],
+	["おおきい", "ookii", "big", "大きい"],
 	["ちいさい", "chiisai", "small"],
 	["あつい", "atsui", "hot"],
 	["さむい", "samui", "cold"],
@@ -232,8 +233,8 @@ words["Chapter 4: い type modifiers (part 3)"] = [
 words["Chapter 4: い type modifiers (part 4)"] = [
 	["ながい", "nagai", "long"],
 	["みじかい", "mijikai", "short"],
-	["たかい", "takai", "high/tall/expensive"],
-	["やすい", "yasui", "cheap"],
+	["たかい", "takai", "high/tall/expensive", "高い"],
+	["やすい", "yasui", "cheap", "安い"],
 	["ひくい", "hikui", "low"],
 	["せがたかい", "segatakai", "tall (height)"],
 	["せがひくい", "segahikui", "short (height)"]
@@ -258,10 +259,10 @@ words["Chapter 4: Body Parts"] = [
 	["かお", "kao", "face"],
 	["あたま", "atama", "head"],
 	["かみ", "kami", "hair"],
-	["め", "me", "eye"],
+	["め", "me", "eye", "目"],
 	["みみ", "mimi", "ear"],
 	["はな", "hana", "nose"],
-	["くち", "kuchi", "mouth"],
+	["くち", "kuchi", "mouth", "口"],
 	["て", "te", "hand/arm"],
 	["あし", "ashi", "leg/foot"],
 	["しっぽ", "shippo", "tail"]
@@ -319,44 +320,44 @@ words["Chapter 5: Family (part 2)"] = [
 ];
 
 words["Chapter 5: Counting people"] = [
-	["ひとり", "hitori", "one person"],
-	["ふたり", "futari", "two people"],
-	["さんにん", "sannin", "three people"],
-	["よにん", "yonin", "four people"],
-	["ごにん", "gonin", "five people"],
-	["ろくにん", "rokunin", "six people"],
-	["しちにん", "shichinin", "seven people"],
-	["はちにん", "hachinin", "eight people"],
-	["きゅうにん", "kyuunin", "nine people"],
-	["じゅうにん", "juunin", "ten people"],
-	["じゅういちにん", "juuichinin", "eleven people"]
+	["ひとり", "hitori", "one person", "一人"],
+	["ふたり", "futari", "two people", "二人"],
+	["さんにん", "sannin", "three people", "三人"],
+	["よにん", "yonin", "four people", "四人"],
+	["ごにん", "gonin", "five people", "五人"],
+	["ろくにん", "rokunin", "six people", "六人"],
+	["しちにん", "shichinin", "seven people", "七人"],
+	["はちにん", "hachinin", "eight people", "八人"],
+	["きゅうにん", "kyuunin", "nine people", "九人"],
+	["じゅうにん", "juunin", "ten people", "十人"],
+	["じゅういちにん", "juuichinin", "eleven people", "十一人"]
 ];
 
 words["Chapter 6: Verbs"] = [
-	["いきます", "ikimasu", "to go"],
-	["きます", "kimasu", "to come"],
+	["いきます", "ikimasu", "to go", "行きます"],
+	["きます", "kimasu", "to come", "来ます"],
 	["かえります", "kaerimasu", "to return"],
 	["はいります", "hairimasu", "to enter"],
 	["あそびます", "asobimasu", "to play"],
-	["やすみます", "yasumimas", "to rest/have a break"],
+	["やすみます", "yasumimas", "to rest/have a break", "休みます"],
 	["さんぽします", "sanposhimasu", "to take a walk"],
 	["べんきょうします", "benkyou", "to study"],
 	["テニスします", "tenisushimasu", "to play tennis"]
 ];
 
 words["Chapter 6: Modifiers of time"] = [
-	["きょう", "kyou", "today"],
-	["あした", "ashita", "tomorrow"],
+	["きょう", "kyou", "today", "今日"],
+	["あした", "ashita", "tomorrow", "明日"],
 	["あさって", "asatte", "day after tomorrow"],
-	["ごぜんちゅう", "gozenchuu", "in the morning"],
-	["ごご", "gogo", "afternoon"],
-	["こんばん", "konban", "tonight"],
-	["こんしゅう", "konshuu", "this week"],
-	["らいしゅう", "raishuu", "next week"],
-	["こんげつ", "kongetsu", "this month"],
-	["らいげつ", "raigetsu", "next month"],
-	["ことし", "kotoshi", "this year"],
-	["らいねん", "rainen", "next year"]
+	["ごぜんちゅう", "gozenchuu", "in the morning", "午前中"],
+	["ごご", "gogo", "afternoon", "午ご"],
+	["こんばん", "konban", "tonight", "今晩"],
+	["こんしゅう", "konshuu", "this week", "今しゅう"],
+	["らいしゅう", "raishuu", "next week", "来しゅう"],
+	["こんげつ", "kongetsu", "this month", "今月"],
+	["らいげつ", "raigetsu", "next month", "来月"],
+	["ことし", "kotoshi", "this year", "今年"],
+	["らいねん", "rainen", "next year", "らいねん"]
 ];
 
 words["Chapter 6: Days of the week"] = [
@@ -371,19 +372,19 @@ words["Chapter 6: Days of the week"] = [
 ];
 
 words["Chapter 6: Time"] = [
-	["なんじ", "nanji", "what time?"],
-	["いちじ", "ichiji", "one o'clock"],
-	["にじ", "niji", "two o'clock"],
-	["さんじ", "sanji", "three o'clock"],
-	["よじ", "yoji", "four o'clock"],
-	["ごじ", "goji", "five o'clock"],
-	["ろくじ", "rokuji", "six o'clock"],
-	["しちじ", "shichiji", "seven o'clock"],
-	["はちじ", "hachiji", "eight o'clock"],
-	["くじ", "kuji", "nine o'clock"],
-	["じゅうじ", "juuji", "ten o'clock"],
-	["じゅういちじ", "juichiji", "eleven o'clock"],
-	["じゅうにじ", "juuniji", "twelve o'clock"],
+	["なんじ", "nanji", "what time?", "何時"],
+	["いちじ", "ichiji", "one o'clock", "一時"],
+	["にじ", "niji", "two o'clock", "二時"],
+	["さんじ", "sanji", "three o'clock", "三時"],
+	["よじ", "yoji", "four o'clock", "四時"],
+	["ごじ", "goji", "five o'clock", "五時"],
+	["ろくじ", "rokuji", "six o'clock", "六時"],
+	["しちじ", "shichiji", "seven o'clock", "七時"],
+	["はちじ", "hachiji", "eight o'clock", "八時"],
+	["くじ", "kuji", "nine o'clock", "九時"],
+	["じゅうじ", "juuji", "ten o'clock", "十字"],
+	["じゅういちじ", "juichiji", "eleven o'clock", "十一時"],
+	["じゅうにじ", "juuniji", "twelve o'clock", "十二時"],
 ];
 
 words["Chapter 6: Modifiers of quality"] = [
@@ -414,7 +415,7 @@ words["Chapter 7: ～を verbs (Part 1)"] = [
 	["おしえます", "oshiemasu", "to teach", "教えます"],
 	["のみます", "nomimasu", "to drink", "飲みます"],
 	["はなします", "hanashimasu", "to speak", "話します"],
-	["だべます", "", "to eat", "食べます"]
+	["だべます", "tabemasu", "to eat", "食べます"]
 ];
 
 words["Chapter 7: ～を verbs (Part 2)"] = [
