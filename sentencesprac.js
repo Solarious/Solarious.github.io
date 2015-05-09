@@ -2,6 +2,10 @@
 	document.getElementById(id).textContent = text;
 }
 
+function setElementValue(id, text) {
+	document.getElementById(id).value = text;
+}
+
 function isChecked(id) {
 	var element = document.getElementById(id);
 	if (element == null) return false;
@@ -213,6 +217,7 @@ function next() {
 		} else {
 			setElementText("textX", sentence[1]);
 		}
+		setElementValue("submitButton", "Reveal");
 		
 		stage = 1;
 	} else {
@@ -221,6 +226,7 @@ function next() {
 		} else {
 			setElementText("textY", sentence[0]);
 		}
+		setElementValue("submitButton", "Next");
 		
 		stage = 0;
 	}

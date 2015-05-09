@@ -129,7 +129,7 @@ words["Chapter 2: School/Faculty of ~"] = [
 words["Chapter 3: Nouns"] = [
 	["えいが", "eiga", "movie/movies"],
 	["おんがく", "ongaku", "music"],
-	["きゅく", "kyuku", "a piece of music"],
+	["きょく", "kyoku", "a piece of music"],
 	["~ごうしつ", "~goushitsu", "room number ~"],
 	["こうちゃ", "koucha", "tea (english style)"],
 	["ジャズ", "jazu", "jazz music"],
@@ -236,7 +236,7 @@ words["Chapter 4: い type modifiers (part 4)"] = [
 	["たかい", "takai", "high/tall/expensive", "高い"],
 	["やすい", "yasui", "cheap", "安い"],
 	["ひくい", "hikui", "low"],
-	["せがたかい", "segatakai", "tall (height)"],
+	["せがたかい", "segatakai", "tall (height)", "せが高い"],
 	["せがひくい", "segahikui", "short (height)"]
 ];
 
@@ -281,14 +281,14 @@ words["Chapter 4: Colours"] = [
 ];
 
 words["Chapter 5: Location words"] = [
-	["うえ", "ue", "above"],
-	["した", "shita", "under"],
+	["うえ", "ue", "above", "上"],
+	["した", "shita", "under", "下"],
 	["まえ", "mae", "in front of"],
 	["うしろ", "ushiro", "behind"],
-	["なか", "naka", "inside"],
+	["なか", "naka", "inside", "中"],
 	["そと", "soto", "outside"],
-	["みぎ", "migi", "right"],
-	["ひだり", "hidari", "left"],
+	["みぎ", "migi", "right", "右"],
+	["ひだり", "hidari", "left", "左"],
 	["となり", "tonari", "next to"],
 	["ちかく", "chikaku", "nearby"]
 ];
