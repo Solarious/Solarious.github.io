@@ -195,9 +195,19 @@ function nextKanaToEnglish() {
 		stage = 3;
 		
 		setElementText(textC, getEnglish(tuples[num]));
+		setElementValue(submitButton, "Next");
 	} else if (stage == 3) {
 		stage = 1;
 		num++;
+		
+		if (num >= tuples.length) {
+			setElementText(textA, "Complete");
+			setElementText(textB, "Press Start to");
+			setElementText(textC, "try again");
+			setElementValue(submitButton, "Start");
+			stage = 0;
+			return;
+		}
 		
 		if (isChecked(useKanji) && hasKanji(tuples[num])) {
 			setElementText(textA, getKanji(tuples[num]));
@@ -242,6 +252,15 @@ function nextEnglishToKana() {
 	} else if (stage == 3) {
 		stage = 1;
 		num++;
+		
+		if (num >= tuples.length) {
+			setElementText(textA, "Complete");
+			setElementText(textB, "Press Start to");
+			setElementText(textC, "try again");
+			setElementValue(submitButton, "Start");
+			stage = 0;
+			return;
+		}
 		
 		setElementText(textA, getEnglish(tuples[num]));
 		setElementText(textB, "");
