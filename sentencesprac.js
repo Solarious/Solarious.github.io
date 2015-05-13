@@ -48,6 +48,7 @@ var groups = {};
 groups["Chapter 3: Likes"] = generateLikes;
 groups["Chapter 4: Colours"] = generateCarColours;
 groups["Chapter 5: Locations"] = generateLocation;
+groups["Chapter 7: Days and Months"] = generateDaysAndMonths;
 
 var fieldsOfStudy = [
 	["きょういくがく", "education"],
@@ -154,6 +155,21 @@ function generateCarColours() {
 	var sentenceB = [sentenceJapB, sentenceEngB];
 	
 	return getRandom([sentenceA, sentenceB]);
+}
+
+function generateDaysAndMonths() {
+	var months = words["Chapter 7: Months of the year"];
+	months.shift(); // remove the first element from months
+	var month = getRandom(months);
+	
+	var days = words["Chapter 7: Days of the month"];
+	days.shift(); // remove the first element from days
+	var day = getRandom(days);
+	
+	var sentenceJap = genStringWS(month[0], day[0]);
+	var sentenceEng = genStringWS("The", day[2], "of", month[2]);
+	
+	return [sentenceJap, sentenceEng];
 }
 
 //------------------------------------------------------

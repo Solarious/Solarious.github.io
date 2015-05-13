@@ -432,3 +432,68 @@ words["Chapter 7: ～に verbs"] = [
 	["でんわします", "denwashimasu", "to call"],
 	["れんらくします", "renrakushimasu", "to contact"]
 ];
+
+words["Chapter 7: Months of the year"] = [
+	["なんがつ", "nangatsu", "which month", "何月"],
+	["いちがつ", "ichigatsu", "January", "一月"],
+	["にがつ", "nigatsu", "Feburary", "二月"],
+	["さんがつ", "sangatsu", "March", "三月"],
+	["しがつ", "shigatsu", "April", "四月"],
+	["ごがつ", "gogatsu", "May", "五月"],
+	["ろくがつ", "rokugatsu", "June", "六月"],
+	["しちがつ", "shichigatsu", "July", "七月"],
+	["はちがつ", "hachigatsu", "August", "八月"],
+	["くがつ", "kugatsu", "September", "九月"],
+	["じゅうがつ", "juugatsu", "October", "十月"],
+	["じゅういちがつ", "juuichigatsu", "November", "十一月"],
+	["じゅうにがつ", "juunigatsu", "December", "十二月"]
+];
+
+words["Chapter 7: Days of the month"] = [
+	["なんにち", "nannichi", "which date", "何日"],
+	["ついたち", "tsuitachi", "1st", "一日"],
+	["ふつか", "futsuka", "2nd", "二日"],
+	["みっか", "mikka", "3rd", "三日"],
+	["よっか", "yokka", "4th", "四日"],
+	["いつか", "itsuka", "5th", "いつか"],
+	["むいか", "muika", "6th", "六日"],
+	["なのか", "nanoka", "7th", "七日"],
+	["ようか", "youka", "8th", "八日"],
+	["ここのか", "kokonoka", "9th", "九日"],
+	["とおか", "tooka", "10th", "十日"],
+	["じゅういちにち", "juuichinichi", "11th", "十一日"],
+	["じゅうににち", "juuninichi", "12th", "十二日"],
+	["じゅうさんにち", "juusannichi", "13th", "十三日"],
+	["じゅうよっか", "juuyokka", "14th", "十四日"],
+	["じゅうごにち", "juugonichi", "15th", "十五日"],
+	["じゅうろくにち", "juurokunichi", "16th", "十六日"],
+	["じゅうしちにち", "juushichinichi", "17th", "十七日"],
+	["じゅうはちにち", "juuhachinichi", "18th", "十八日"],
+	["じいくにち", "juukunichi", "19th", "十九日"],
+	["はつか", "hatsuka", "20th", "二十日"],
+	["にじゅういちにち", "nijūichinichi", "21st", "二十一日"],
+	["にじゅうににち", "nijuuninichi", "22nd", "二十二日"],
+	["にじゅうさんにち", "nijuusannichi", "23rd", "二十三日"],
+	["にじゅうよっか", "nijuuyokka", "24th", "二十四日"],
+	["にじゅうごにち", "nijuugonichi", "25th", "二十五日"],
+	["にじゅうろくにち", "nijuurokunichi", "26th", "二十六日"],
+	["にじゅうしちにち", "nijuushichinichi", "27th", "二十七日"],
+	["にじゅうはちにち", "nijuuhachinichi", "28th", "二十八日"],
+	["にじゅうくにち", "nijuukunichi", "29th", "二十九日"],
+	["さんじゅうにち", "sanjuunichi", "30th", "三十日"],
+	["さんじゅういちにち", "sanjuuichinichi", "31th", "三十一日"]
+];
+
+words["Chapter 7: Counting things"] = [
+	["いくつ", "ikutsu", "how many"],
+	["ひとつ", "hitotsu", "one", "一つ"],
+	["ふたつ", "futatsu", "two", "二つ"],
+	["みっつ", "mittsu", "three", "三つ"],
+	["よっつ", "yottsu", "four", "四つ"],
+	["いつつ", "itsutsu", "five", "五つ"],
+	["むっつ", "muttsu", "six", "六つ"],
+	["ななつ", "nanatsu", "seven", "七つ"],
+	["やっつ", "yattsu", "eight", "八つ"],
+	["ここのつ", "kokonotsu", "nine", "九つ"],
+	["とお", "too", "ten", "十"]
+];
