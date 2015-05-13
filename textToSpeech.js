@@ -7,7 +7,7 @@ function speakJap(text) {
 }
 
 function browserSupportsNaiveSpeech() {
-	return ('speechSynthesis' in window);
+	return (window.SpeechSynthesisUtterance != undefined);
 }
 
 function speakJapNaive(text) {
