@@ -1,9 +1,7 @@
 function speakJap(text) {
 	if (browserSupportsNaiveSpeech()) {
-		alert("yes");
 		speakJapNaive(text);
 	} else {
-		alert("no");
 		speakJapGoogle(text);
 	}
 }
