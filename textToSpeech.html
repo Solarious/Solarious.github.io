@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">	
@@ -10,6 +10,7 @@
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
+		<script type="text/javascript" src="textToSpeech.js" charset="UTF-8"></script>
 	</head>
 	<body>
 	
@@ -34,7 +35,13 @@
 		
 		<div id="main">
 			<div id="content">
-				<h1>Welcome</h1>
+				<h1>Text to Speech (Prototype)</h1>
+				<form id="mainform" onsubmit="next(); return false;">
+					<br/>
+					<input type="text" id="textBox" />
+					<input type="button" value="Speak" id="speakButton" onclick="speakFromText()" />
+					<p>Text to speach should work on all browsers</p>
+				</form>
 			</div>
 		</div>
 			
