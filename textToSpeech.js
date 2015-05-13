@@ -1,13 +1,15 @@
 function speakJap(text) {
 	if (browserSupportsNaiveSpeech()) {
+		alert("yes");
 		speakJapNaive(text);
 	} else {
+		alert("no");
 		speakJapGoogle(text);
 	}
 }
 
 function browserSupportsNaiveSpeech() {
-	return ('speechSynthesis' in window);
+	return (window.SpeechSynthesisUtterance != undefined);
 }
 
 function speakJapNaive(text) {
