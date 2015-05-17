@@ -357,7 +357,7 @@ words["Chapter 6: Modifiers of time"] = [
 	["こんげつ", "kongetsu", "this month", "今月"],
 	["らいげつ", "raigetsu", "next month", "来月"],
 	["ことし", "kotoshi", "this year", "今年"],
-	["らいねん", "rainen", "next year", "らいねん"]
+	["らいねん", "rainen", "next year", "来年"]
 ];
 
 words["Chapter 6: Days of the week"] = [
@@ -402,9 +402,9 @@ words["Chapter 6: Frequency"] = [
 	["たまに", "tamani", "occasionally"],
 	["あまり～ません", "amari~masen", "not often"],
 	["ぜんぜん～ません", "zenzen~masen", "not at all"],
-	["まいあさ", "maiasa", "every morning"],
-	["まいばん", "maiban", "every evening"],
-	["まいにち", "mainichi", "every day"]
+	["まいあさ", "maiasa", "every morning", "毎朝"],
+	["まいばん", "maiban", "every evening", "毎晩"],
+	["まいにち", "mainichi", "every day", "毎日"]
 ];
 
 words["Chapter 7: ～を verbs (Part 1)"] = [
@@ -482,6 +482,22 @@ words["Chapter 7: Days of the month"] = [
 	["にじゅうくにち", "nijuukunichi", "29th", "二十九日"],
 	["さんじゅうにち", "sanjuunichi", "30th", "三十日"],
 	["さんじゅういちにち", "sanjuuichinichi", "31th", "三十一日"]
+];
+
+words["Chapter 7: Days of the month (difficult)"] = [
+	["ついたち", "tsuitachi", "1st", "一日"],
+	["ふつか", "futsuka", "2nd", "二日"],
+	["みっか", "mikka", "3rd", "三日"],
+	["よっか", "yokka", "4th", "四日"],
+	["いつか", "itsuka", "5th", "いつか"],
+	["むいか", "muika", "6th", "六日"],
+	["なのか", "nanoka", "7th", "七日"],
+	["ようか", "youka", "8th", "八日"],
+	["ここのか", "kokonoka", "9th", "九日"],
+	["とおか", "tooka", "10th", "十日"],
+	["じゅうよっか", "juuyokka", "14th", "十四日"],
+	["はつか", "hatsuka", "20th", "二十日"],
+	["にじゅうよっか", "nijuuyokka", "24th", "二十四日"]
 ];
 
 words["Chapter 7: Counting things"] = [
