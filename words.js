@@ -280,6 +280,28 @@ words["Chapter 4: Colours"] = [
 	["むらさき", "murasaki", "purple"]
 ];
 
+words["Chapter 5: Miscellaneous"] = [
+	["いえ", "ie", "house", "家"],
+	["といっしょに", "toisshoni", "together with"],
+	["いま", "ima", "at this moment/now", "今"],
+	["えき", "eki", "station"],
+	["きょうと", "kyouto", "Kyoto", "京都"],
+	["しゃしん", "shashin", "photograph"],
+	["じんじゃ", "jinja", "shrine"],
+	["たくさん", "takusan", "many/a lot of"],
+	["だれか", "dareka", "someone"],
+	["（お）てら", "(o)tera", "temple"],
+	["でんとうてか（な）", "dentouteki", "traditional/conventional"],
+	["とうきょう", "toukyou", "Tokyo", "東京"],
+	["どなたか", "donataka", "somebody/anybody"],
+	["なにか", "nanika", "something/anything", "何か"],
+	["パン", "pan", "bread"],
+	["ホテル", "hoteru", "hotel"],
+	["ほんとう", "hontou", "true/real", "本当"],
+	["みせ", "mise", "shop", "店"],
+	["りょかん", "ryoukan", "Japanese traditional inn"]
+];
+
 words["Chapter 5: Location words"] = [
 	["うえ", "ue", "above", "上"],
 	["した", "shita", "under", "下"],
@@ -291,6 +313,28 @@ words["Chapter 5: Location words"] = [
 	["ひだり", "hidari", "left", "左"],
 	["となり", "tonari", "next to"],
 	["ちかく", "chikaku", "nearby"]
+];
+
+words["Chapter 5: Occupations"] = [
+	["しごと", "shigoto", "work/occupation"],
+	["いしゃ", "isha", "doctor"],
+	["かいしゃいん", "kaishain", "company employee"],
+	["エンジニア", "enjinia", "engineer"],
+	["きょうし", "youshi", "teacher"],
+	["こうむいん", "koumuin", "civil servant"],
+	["てんいん", "tenin", "shop assistant/clerk", "店員"],
+	["べんごし", "bengoshi", "lawyer"]
+];
+
+words["Chapter 5: School"] = [
+	["しょうがっこう", "shougakkou", "primary school", "小学校"],
+	["ちゅうがっこう", "chuugakkou", "junior high school", "中学校"],
+	["こうとうがっこう", "koutou gakkou", "high school", "高とう学校"],
+	["しょうがくせい", "Shōgakusei", "primary school student", "小学生"],
+	["ちゅうがくせい", "chuugakusei", "junior high school student", "中学生"],
+	["こうこうせい", "koukousei", "high scool student", "高校生"],
+	["ちゅうがくいちねんせい", "chuugakuichinensei", "1st year junior high school student", "中学一年生"],
+	["こうこういちねんせい", "koukouichinensei", "1st year high school student", "高校一年生"]
 ];
 
 words["Chapter 5: Family (part 1)"] = [
@@ -331,6 +375,27 @@ words["Chapter 5: Counting people"] = [
 	["きゅうにん", "kyuunin", "nine people", "九人"],
 	["じゅうにん", "juunin", "ten people", "十人"],
 	["じゅういちにん", "juuichinin", "eleven people", "十一人"]
+];
+
+words["Chapert 6: Miscellaneous (part 1)"] = [
+	["いざかや", "izakaya", "Japanese-style bar"],
+	["いそがし", "isogashi", "busy"],
+	["いろいろ（な）", "iroiro(na)", "various"],
+	["えいがかん", "eigakan", "movie theatre"],
+	["おおぜい", "oozei", "many (people)"],
+	["かいしゃ", "kaisha", "a company/firm"],
+	["カラオケ", "karaoke", "karaoke"]
+];
+
+words["Chapter 6: Miscellaneous (part 2)"] = [
+	["げきじょう", "Gekijō", "theatre"],
+	["せんもんてん", "senmonten", "specialty store", "せんもん店"],
+	["はじめて", "hajimete", "for the first time"],
+	["ひま", "hima", "spare time/free time"],
+	["ひまな", "himana", "free/not busy"],
+	["ビル", "biru", "city office building"],
+	["まだ", "mada", "still/only"],
+	["やきとり", "yakitori", "Japanese style skewered chicken"],
 ];
 
 words["Chapter 6: Verbs"] = [
