@@ -377,7 +377,7 @@ words["Chapter 5: Counting people"] = [
 	["じゅういちにん", "juuichinin", "eleven people", "十一人"]
 ];
 
-words["Chapert 6: Miscellaneous (part 1)"] = [
+words["Chapter 6: Miscellaneous (part 1)"] = [
 	["いざかや", "izakaya", "Japanese-style bar"],
 	["いそがし", "isogashi", "busy"],
 	["いろいろ（な）", "iroiro(na)", "various"],
