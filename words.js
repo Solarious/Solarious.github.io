@@ -1,16 +1,16 @@
 ﻿var words = {};
 
 words["Chapter 1: Basic"] = [
-	["あのひと", "anohito", "That person over there"],
+	["あのひと", "anohito", "That person over there", "あの人"],
 	["いいえ", "iie", "no"],
 	["ええ", "ee", "yes"],
-	["がくせい", "gakusei", "student"],
-	["おくに", "okuni", "country"],
+	["がくせい", "gakusei", "student", "学生"],
+	["おくに", "okuni", "country", "お国"],
 	["こちら", "kochira", "this person (formal, polite)"],
 	["せんせい", "sensei", "teacher", "先生"],
 	["だれ", "dare", "who"],
 	["どなた", "donata", "who (formal)"],
-	["どちら", "dochira", "where"],
+	["どちら", "dochira", "where (formal)"],
 	["なん", "nan", "what"],
 	["なに", "nani", "what", "何"],
 	["はい", "hai", "yes"],
@@ -50,13 +50,13 @@ words["Chapter 1: Fields of Study"] = [
 	["せいじ(がく)", "seiji(gaku)", "politics", "せいじ学"],
 	["けいえい(がく)", "keiei(gaku)", "management"],
 	["ほうりつ", "houritsu", "law"],
-	["ほうがく", "hougaku", "law"],
-	["けいざい(がく)", "keizai(gaku)", "economics"],
-	["ぶんがく", "bungaku", "literature"],
-	["かいけい(がく)", "kaikei(gaku)", "accounting"],
+	["ほうがく", "hougaku", "law", "ほう学"],
+	["けいざい(がく)", "keizai(gaku)", "economics", "けいざい学"],
+	["ぶんがく", "bungaku", "literature", "ぶん学"],
+	["かいけい(がく)", "kaikei(gaku)", "accounting", "かいけい学"],
 	["れきし", "rekishi", "history"],
 	["アジアけんきゅう", "ajia kenkyuu", "asian studies"],
-	["にほんけんきゅう", "nihon kenkyuu", "japanese studies"],
+	["にほんけんきゅう", "nihon kenkyuu", "japanese studies", "日本けんきょう"],
 	["コンピュータ", "konpyuuta", "computing"],
 	["コミュニケーション", "komyunikeeshon", "communication"]
 ];
@@ -81,9 +81,9 @@ words["Chapter 2: Nouns"] = [
 
 words["Chapter 2: Buildings/Facilities Part 1"] = [
 	["がっこう", "gakkou", "school", "学こう"],
-	["がくしょく", "gakushoku", "canteen"],
+	["がくしょく", "gakushoku", "school canteen", "学食"],
 	["カフェテリア", "kafeteria", "cafeteria"],
-	["きっさてん", "kissaten", "coffee shop"],
+	["きっさてん", "kissaten", "coffee shop", "きっさ店"],
 	["きょうしつ", "kyoushitsu", "classroom"],
 	["ぎんこう", "ginkou", "bank"],
 	["けんきゅうしつ", "kenkyuushitsu", "lecturer's office"]
@@ -108,7 +108,7 @@ words["Chapter 2: Personal relationships"] = [
 ];
 
 words["Chapter 2: Subjects"] = [
-	["えいご", "eigo", "english"],
+	["えいご", "eigo", "english", "えい語"],
 	["にほんご", "nihongo", "japanese", "日本語"],
 	["すうがく", "suugaku", "mathematics", "すう学"],
 ];
@@ -207,7 +207,7 @@ words["Chapter 4: Nouns (part 3)"] = [
 
 words["Chapter 4: い type modifiers (part 1)"] = [
 	["おおきい", "ookii", "big", "大きい"],
-	["ちいさい", "chiisai", "small"],
+	["ちいさい", "chiisai", "small", "小さい"],
 	["あつい", "atsui", "hot"],
 	["さむい", "samui", "cold"],
 	["すずしい", "suzushii", "cool"]
@@ -379,7 +379,7 @@ words["Chapter 5: Counting people"] = [
 
 words["Chapter 6: Miscellaneous (part 1)"] = [
 	["いざかや", "izakaya", "Japanese-style bar"],
-	["いそがし", "isogashi", "busy"],
+	["いそがしい", "isogashii", "busy"],
 	["いろいろ（な）", "iroiro(na)", "various"],
 	["えいがかん", "eigakan", "movie theatre"],
 	["おおぜい", "oozei", "many (people)"],
@@ -498,6 +498,13 @@ words["Chapter 7: ～に verbs"] = [
 	["れんらくします", "renrakushimasu", "to contact"]
 ];
 
+words["Chapter 7: Meals"] = [
+	["あさごはん", "asagohan", "breakfast", "朝ごはん"],
+	["ばんごはん", "bangohan", "dinner", "晩ごはん"],
+	["ひるごはん", "hirugohan", "lunch"],
+	["おひる", "ohiru", "lunchtime"]
+];
+
 words["Chapter 7: Months of the year"] = [
 	["なんがつ", "nangatsu", "which month", "何月"],
 	["いちがつ", "ichigatsu", "January", "一月"],
@@ -520,7 +527,7 @@ words["Chapter 7: Days of the month"] = [
 	["ふつか", "futsuka", "2nd", "二日"],
 	["みっか", "mikka", "3rd", "三日"],
 	["よっか", "yokka", "4th", "四日"],
-	["いつか", "itsuka", "5th", "いつか"],
+	["いつか", "itsuka", "5th", "五日"],
 	["むいか", "muika", "6th", "六日"],
 	["なのか", "nanoka", "7th", "七日"],
 	["ようか", "youka", "8th", "八日"],
@@ -554,7 +561,7 @@ words["Chapter 7: Days of the month (difficult)"] = [
 	["ふつか", "futsuka", "2nd", "二日"],
 	["みっか", "mikka", "3rd", "三日"],
 	["よっか", "yokka", "4th", "四日"],
-	["いつか", "itsuka", "5th", "いつか"],
+	["いつか", "itsuka", "5th", "五日"],
 	["むいか", "muika", "6th", "六日"],
 	["なのか", "nanoka", "7th", "七日"],
 	["ようか", "youka", "8th", "八日"],
@@ -577,4 +584,36 @@ words["Chapter 7: Counting things"] = [
 	["やっつ", "yattsu", "eight", "八つ"],
 	["ここのつ", "kokonotsu", "nine", "九つ"],
 	["とお", "too", "ten", "十"]
+];
+
+words["Chapter 8: Modifiers of Time (Past)"] = [
+	["きのう", "kinou", "yesterday", "昨日"],
+	["おととい", "ototoi", "day before yesterday", "一昨日"],
+	["せんしゅう", "senshuu", "last week", "先しゅう"],
+	["せんせんしゅう", "sensenshuu", "the week before the last", "先先しゅう"],
+	["せんげつ", "sengetsu", "last month", "先月"],
+	["せんせんげつ", "sensengetsu", "the month before the last", "先先月"],
+	["", "", "", ""],
+	["", "", "", ""],
+	["", "", "", ""],
+	["", "", "", ""]
+];
+
+words["Chapter 8: Verbs (Part 1)"] = [
+	["おきます", "okimasu", "to get up"],
+	["ねます", "nemasu", "to go to bed"],
+	["つくります", "tsukurimasu", "to make/cook", "作ります"],
+	["でかけます", "dekakemasu", "to go out (to do something)"],
+	["はたらきます", "hatarakimasu", "to work"],
+	["かいます", "Kaimasu", "to buy"],
+	["つかれます", "tsukaremasu", "to become tired"],
+];
+
+words["Chapter 8: Verbs (Part 2)"] = [
+	["(を)でます", "(wo)demasu", "to go out (of)"],
+	["(に)でます", "(ni)demasu", "to attend"],
+	["はじまります", "hajimarimasu", "to begin/something begins"],
+	["おわります", "owarimasu", "to finish/something finishes"],
+	["かかります", "kakarimasu", "(something) to take time"],
+	["わかります", "wakarimasu", "to understand"],
 ];
