@@ -11,8 +11,8 @@
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
 		<script type="text/javascript" src="words.js" charset="UTF-8"></script>
-		<script type="text/javascript" src="wordsprac2.js" charset="UTF-8"></script>
-		<script type="text/javascript">orderKanaToEnglish = false;</script>
+		<script type="text/javascript" src="textToSpeech.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="speechrec.js" charset="UTF-8"></script>
 	</head>
 	<body onload="setup()">
 	
@@ -38,7 +38,7 @@
 		
 		<div id="main">
 			<div id="content">
-				<h1>Word to Kana</h1>
+				<h1>Speech Recognition</h1>
 				<form id="mainform" onsubmit="next(); return false;">
 					<table>
 						<tr>
@@ -53,9 +53,7 @@
 					</table>
 					<br/>
 					<input type="submit" value="Start" id="submitButton" />
-					<input type="checkbox" id="useKanji"/>
-					<label for="useKanji">Use Kanji</label>
-					<input type="button" value="Show Romaji" id="showRomajiKana" onclick="showRomajiB()" />
+					<input type="button" value="Play Word" id="playSoundButton" onclick="playWord()" disabled />
 					<br/><br/>
 					<div id="checkBoxes">Word Groups (select at least one):<br/></div>
 					<div><input type="button" value="Restart" id="restartButton" onclick="setup()" /></div>

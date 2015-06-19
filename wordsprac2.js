@@ -178,8 +178,9 @@ function next() {
 
 function nextKanaToEnglish() {
 	if (stage == 0) {
-		start();
-		stage = 1;
+		if (start()) {
+			stage = 1;
+		}
 	} else if (stage == 1) {
 		stage = 2;
 		
@@ -223,8 +224,9 @@ function nextKanaToEnglish() {
 
 function nextEnglishToKana() {
 	if (stage == 0) {
-		start();
-		stage = 1;
+		if (start()) {
+			stage = 1;
+		}
 	} else if (stage == 1) {
 		stage = 2;
 		
