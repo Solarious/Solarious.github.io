@@ -126,6 +126,12 @@ words["Chapter 2: School/Faculty of ~"] = [
 	["なにがくぶ", "nanigakubu", "What school"]
 ];
 
+words["Chapter 2: Expressions"] = [
+	["どうぞ", "douzo", "Here you go (when offereing something)"],
+	["りっぱですね", "rippadesune", "Wonderful, isn't it"],
+	["いただきます", "itadakimasu", "Let's eat/Thank you (when recieving a gift)"]
+];
+
 words["Chapter 3: Nouns"] = [
 	["えいが", "eiga", "movie/movies"],
 	["おんがく", "ongaku", "music"],
@@ -172,7 +178,8 @@ words["Chapter 3: Expressions"] = [
 	["おはいりください", "ohairikudasai", "please enter"],
 	["いいえ, けっこうです", "iie, kekkoudesu", "no, thank you"],
 	["(~は)いかがですね", "(~wa)ikagadesune", "how about ~"],
-	["すみません", "sumimasen", "excuse me / i am sorry / thank you"]
+	["すみません", "sumimasen", "excuse me / i am sorry / thank you"],
+	["どうぞこちらへ", "douzokochirae", "Please, come this way"]
 ];
 
 words["Chapter 4: Nouns (part 1)"] = [
@@ -505,6 +512,35 @@ words["Chapter 7: Meals"] = [
 	["おひる", "ohiru", "lunchtime"]
 ];
 
+words["Chapter 7: Food"] = [
+	["ごはん", "gohan", "rice"],
+	["やさい", "yasai", "vegetables"],
+	["にく", "niku", "meat"],
+	["たまご", "tamago", "egg"],
+	["おかし", "okashi", "snack/sweets/candy"],
+	["さかな", "sakana", "fish"],
+];
+
+words["Chapter 7: Drinks"] = [
+	["のみもの", "nomimono", "drinks", "飲みの"],
+	["（お）さけ", "(o)sake", "sake/alcohole"],
+	["おちゃ", "ocha", "green tea"],
+	["ジュース", "juusu", "softdrinks/juice"],
+	["アイスコーヒー", "aisukoohii", "ice tea"],
+	["ワイン", "wain", "wine"],
+	["アイスティー", "aisutii", "ice coffee"],
+	["ミルク", "milk", "milk"]
+];
+
+words["Chapter 7: Fruit"] = [
+	["くだもの", "kudamono", "fruit"],
+	["りんご", "ringo", "apple"],
+	["ぶどう", "budou", "grape"],
+	["バナナ", "banana", "banana"],
+	["メロン", "meron", "melon"],
+	["みかん", "mikan", "mandarin"]
+];
+
 words["Chapter 7: Months of the year"] = [
 	["なんがつ", "nangatsu", "which month", "何月"],
 	["いちがつ", "ichigatsu", "January", "一月"],
@@ -586,6 +622,36 @@ words["Chapter 7: Counting things"] = [
 	["とお", "too", "ten", "十"]
 ];
 
+words["Chapter 7: Expressions"] = [
+	["おまたせいたしました", "omataseitashimashita", "Sorry to have kept you waiting"],
+	["かしこまりました", "kashikomarimashita", "Certainly, sir"],
+	["～はけっこうです", "~wakekkoudesu", "no thank you"],
+	["～にします", "~nishimasu", "I'll take this/I'll have this"],
+	["～をください", "~okudasai", "Please give me ~ / Can I have ~"],
+	["～をおねがいします", "oonegaishimasu", "Pleas give me ~ / Please do ~"],
+];
+
+words["Chapter 8: Miscellaneous (part 1)"] = [
+	["アルバイト", "arubaito", "part-time work"],
+	["いちにちじゅう", "ichinichijuu", "all day", "一日中"],
+	["え", "e", "picture/painting"],
+	["かいもの", "kaimono", "shopping"],
+	["かいものします", "kaimonoshimasu", "to shop"],
+	["これから", "korekara", "from now"],
+	["せいかつ", "seikatsu", "life", "生かつ"]
+];
+
+words["Chapter 8: Miscellaneous (part 2)"] = [
+	["それから", "sorekara", "after that"],
+	["そのあと", "sonoato", "after that"],
+	["それで", "Sorede", "so/for that reason"],
+	["だいじょうぶ", "daijoubu", "all right", "大じょうぶ"],
+	["ところ", "tokoro", "place"],
+	["どのくらい", "donokurai", "how long"],
+	["はやい", "hayai", "early"],
+	["ゆっくり", "yukkuri", "at your leisure/at ease/leisurely"]
+];
+
 words["Chapter 8: Modifiers of Time (Past)"] = [
 	["きのう", "kinou", "yesterday", "昨日"],
 	["おととい", "ototoi", "day before yesterday", "一昨日"],
@@ -593,10 +659,16 @@ words["Chapter 8: Modifiers of Time (Past)"] = [
 	["せんせんしゅう", "sensenshuu", "the week before the last", "先先しゅう"],
 	["せんげつ", "sengetsu", "last month", "先月"],
 	["せんせんげつ", "sensengetsu", "the month before the last", "先先月"],
-	["", "", "", ""],
-	["", "", "", ""],
-	["", "", "", ""],
-	["", "", "", ""]
+	["きょねん", "kyonen", "last year", "きょ年"],
+	["おととし", "ototoshi", "the year before the last"],
+	["けさ", "kesa", "this morning", "今朝"],
+	["ゆうべ", "yuube", "last night"]
+];
+
+words["Chapter 8: Modifiers of Time (Future)"] = [
+	["さらいしゅう", "saraishuu", "the week after next", "さ来しゅう"],
+	["さらいげつ", "saraigetsu", "the month after next", "さ来月"],
+	["さらいねん", "sarainen", "the year after next", "さ来年"],
 ];
 
 words["Chapter 8: Verbs (Part 1)"] = [
