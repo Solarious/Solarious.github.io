@@ -179,6 +179,17 @@ function next() {
 		stage = 1;
 		num++;
 		
+		if (num >= tuples.length) {
+			setElementText(textA, "Complete");
+			setElementText(textB, "Press Start to");
+			setElementText(textC, "try again");
+			setElementValue(submitButton, "Start");
+			getElement(submitButton).disabled = false;
+			getElement(playButton).disabled = true;
+			stage = 0;
+			return;
+		}
+		
 		setElementText(textA, "");
 		setElementText(textB, ""	);
 		setElementText(textC, "");
