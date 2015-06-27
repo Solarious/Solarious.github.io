@@ -144,14 +144,15 @@ function start() {
 	setElementText(textB, "");
 	setElementText(textC, "");
 	setElementValue(submitButton, "Reveal");
-	getElement(submitButton).disabled = true;
+	getElement(submitButton).disabled = false;
 	getElement(playButton).disabled = false;
+	
+	return true;
 }
 
 // Stage 0: all text boxes empty, game not started yet
-// Stage 1: textA contains "Press play word button", play sound button not yet pressed
-// Stage 2: textA contains "Press play word button", play sound button not yet pressed
-// Stage 3: textA/textB contains Kanji/Hiragana/katakana, textC contains english
+// Stage 1: textA contains "Press play word button"
+// Stage 2: textA/textB contains Kanji/Hiragana/katakana, textC contains english
 // Stage 10: Text boxes contain "complete"
 
 // Called when the next button is pressed
@@ -159,11 +160,10 @@ function next() {
 	if (stage == 0) {
 		if (start()) {
 			stage = 1;
+			playWord();
 		}
 	} else if (stage == 1) {
-		
-	} else if (stage == 2) {
-		stage = 3
+		stage = 2
 		
 		if (hasKanji(tuples[num])) {
 			setElementText(textA, getKanji(tuples[num]));
@@ -175,7 +175,7 @@ function next() {
 		}
 		setElementText(textC, getEnglish(tuples[num]));
 		setElementValue(submitButton, "Next");
-	} else if (stage == 3) {
+	} else if (stage == 2) {
 		stage = 1;
 		num++;
 		
@@ -191,23 +191,27 @@ function next() {
 		}
 		
 		setElementText(textA, "");
-		setElementText(textB, ""	);
+		setElementText(textB, "");
 		setElementText(textC, "");
 		setElementValue(submitButton, "Reveal");
-		getElement(submitButton).disabled = true;
+		getElement(submitButton).disabled = false;
 		getElement(playButton).disabled = false;
+		playWord();
 	}
 }
 
 // Called when the playWord button is pressed
 function playWord() {
-	if (stage == 1) {
-		stage = 2;
-		getElement(submitButton).disabled = false;
-	}
+	getElement(submitButton).disabled = true;
+	getElement(playButton).disabled = true;
 	if (hasKanji(tuples[num])) {
-		speakJap(getKanji(tuples[num]));
+		speakJap(getKanji(tuples[num]), onAudioEnd);
 	} else {
-		speakJap(getHiragana(tuples[num]));
+		speakJap(getHiragana(tuples[num]), onAudioEnd);
 	}
+}
+
+function onAudioEnd() {
+	getElement(submitButton).disabled = false;
+	getElement(playButton).disabled = false;
 }
