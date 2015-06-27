@@ -189,6 +189,10 @@ input[type="checkbox"] {
 	font-size: 150%;
 }
 
+:checked + label {
+   font-weight: bold;
+}
+
 .checkboxGroup {
 	margin-top: 10px;
 	float: left;
