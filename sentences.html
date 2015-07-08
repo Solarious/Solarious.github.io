@@ -11,8 +11,8 @@
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
 		<script type="text/javascript" src="words.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="textToSpeech.js" charset="UTF-8"></script>
 		<script type="text/javascript" src="sentencesprac.js" charset="UTF-8"></script>
-		<script type="text/javascript"></script>
 	</head>
 	<body onload="setup();">
 	
@@ -50,12 +50,16 @@
 					</table>
 					<br/>
 					<input type="submit" value="Start" id="submitButton" />
-					<br/>
+					<input type="button" value="Play Word" id="playSoundButton" onclick="playWord()" disabled />
+					<br/><br/>
 					<input type="radio" name="kh" class="giveSpaceOnLeft" id="radioKtoE" checked="true" />
 					<label for="radioKtoE">Hiragana/Katakana to English</label>
 					<br/>
 					<input type="radio" name="kh" class="giveSpaceOnLeft" id="radioEtoK" />
 					<label for="radioEtoK">English to Hiragana/Katakana</label>
+					<br/>
+					<input type="radio" name="kh" class="giveSpaceOnLeft" id="radioSL" />
+					<label for="radioSL">Sentence Listening</label>
 					<br/><br/>
 					<div id="checkBoxes">Word Groups (select at least one):<br/></div>
 				</form>

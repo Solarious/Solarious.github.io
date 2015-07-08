@@ -6,6 +6,10 @@ function setElementValue(id, text) {
 	document.getElementById(id).value = text;
 }
 
+function getElement(id) {
+	return document.getElementById(id);
+}
+
 function isChecked(id) {
 	var element = document.getElementById(id);
 	if (element == null) return false;
@@ -35,6 +39,18 @@ function genStringWS() {
 
 function orderIsKanaToEnglish() {
 	return isChecked("radioKtoE");
+}
+
+function checkedRadioNumber() {
+	if (isChecked("radioKtoE")) {
+		return 1;
+	} else if (isChecked("radioEtoK")) {
+		return 2;
+	} else if (isChecked("radioSL")) {
+		return 3;
+	} else {
+		return 0;
+	}
 }
 
 // Returns an array of the ids of all the checked checkboxes in the element/div with id=id
@@ -174,43 +190,56 @@ function generateDaysAndMonths() {
 
 //------------------------------------------------------
 
-function setup() {
-	var nodeTextBoxes = document.getElementById("checkBoxes");
-	var n = 0;
-	var npg = 4;
-	var nodeDivGroup;
-	for (key in groups) {
-		if (n%npg == 0) {
-			nodeDivGroup = document.createElement("div");
-			nodeDivGroup.className = "checkboxGroup";
-		}
-		var nodeInput = document.createElement("input");
-		nodeInput.setAttribute("type", "checkbox");
-		nodeInput.setAttribute("id", key);
-		nodeDivGroup.appendChild(nodeInput);
-		var nodeLabel = document.createElement("label");
-		nodeLabel.setAttribute("for", key);
-		nodeLabel.textContent = key;
-		nodeDivGroup.appendChild(nodeLabel);
-		nodeDivGroup.appendChild(document.createElement("br"));
-		
-		if (n%npg == npg-1) {
-			nodeTextBoxes.appendChild(nodeDivGroup);
-		}
-		n++;
-	}
-	if (n%npg != 0) {
-		nodeTextBoxes.appendChild(nodeDivGroup);
-	}
-}
-
 var stage = 0;
 var sentence;
 
+var textA = "textX";
+var textB = "textY";
+var submitButton = "submitButton";
+var playButton = "playSoundButton";
+var checkBoxes = "checkBoxes";
+var checkBoxGroup = "checkboxGroup";
+
+function setup() {
+	var nodeCheckBoxes = document.getElementById(checkBoxes);
+	var n = 0;
+	// Each checkbox is placed into groups of npg
+	var npg = 4;
+	var nodeDivGroup;
+	
+	for (key in groups) {
+		if (n%npg == 0) {
+			nodeDivGroup = document.createElement("div");
+			nodeDivGroup.className = checkBoxGroup;
+			nodeCheckBoxes.appendChild(nodeDivGroup);
+		}
+		
+		// Create a checkbox with id = word group name i.e. "Chapter 3: Likes", then adds it to nodeDivGroup
+		var nodeInput = document.createElement("input");
+		nodeInput.type = "checkbox";
+		nodeInput.id = key;
+		nodeDivGroup.appendChild(nodeInput);
+		
+		// Creates a label for the checkbox
+		var nodeLabel = document.createElement("label");
+		nodeLabel.htmlFor = key;
+		nodeLabel.textContent = key;
+		nodeDivGroup.appendChild(nodeLabel);
+		
+		// Adds a line break element
+		nodeDivGroup.appendChild(document.createElement("br"));
+		
+		n++;
+	}
+}
+
+// Stage 0: textA and textB both empty (exercise not started yet) or both contain text (answer revealed, press next button for next question)
+// Stage 1: With (Hiragana/Katakana to English)/(English to Hiragana/Katakana) textA contains text. With Sentence Listening, text boxes are empty
+
 function next() {
 	if (stage == 0) {
-		setElementText("textX", "");
-		setElementText("textY", "");
+		setElementText(textA, "");
+		setElementText(textB, "");
 		
 		var selection = []
 		for (key in groups) {
@@ -220,30 +249,53 @@ function next() {
 		}
 		
 		if (selection.length == 0) {
-			setElementText("textX", "Select at least one");
-			setElementText("textY", "word group");
+			setElementText(textA, "Select at least one");
+			setElementText(textB, "word group");
 			return false;
 		}
 		
 		var fun = groups[getRandom(selection)];
 		sentence = fun();
 		
-		if (orderIsKanaToEnglish()) {
-			setElementText("textX", sentence[0]);
-		} else {
-			setElementText("textX", sentence[1]);
+		if (checkedRadioNumber() == 1) {
+			setElementText(textA, sentence[0]);
+			getElement(playButton).disabled = true;
+		} else if (checkedRadioNumber() == 2) {
+			setElementText(textA, sentence[1]);
+			getElement(playButton).disabled = true;
+		} else if (checkedRadioNumber() == 3) {
+			setElementText(textA, "");
+			setElementText(textB, "");
+			playWord();
 		}
 		setElementValue("submitButton", "Reveal");
 		
 		stage = 1;
 	} else {
-		if (orderIsKanaToEnglish()) {
-			setElementText("textY", sentence[1]);
-		} else {
-			setElementText("textY", sentence[0]);
+		if (checkedRadioNumber() == 1) {
+			setElementText(textB, sentence[1]);
+			getElement(playButton).disabled = true;
+		} else if (checkedRadioNumber() == 2) {
+			setElementText(textB, sentence[0]);
+			getElement(playButton).disabled = true;
+		} else if (checkedRadioNumber() == 3) {
+			setElementText(textA, sentence[0]);
+			setElementText(textB, sentence[1]);
 		}
 		setElementValue("submitButton", "Next");
 		
 		stage = 0;
 	}
+}
+
+// Called when the playWord button is pressed
+function playWord() {
+	getElement(submitButton).disabled = true;
+	getElement(playButton).disabled = true;
+	speakJap(sentence[0], onAudioEnd);
+}
+
+function onAudioEnd() {
+	getElement(submitButton).disabled = false;
+	getElement(playButton).disabled = false;
 }
