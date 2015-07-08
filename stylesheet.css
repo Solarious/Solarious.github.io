@@ -178,6 +178,7 @@ input[type="button"] :not(#showRomajiKana) {
 
 #showRomajiKana , #playSoundButton {
 	margin-left: 2em;
+	margin-right: 2em;
 	width: auto;
 }
 

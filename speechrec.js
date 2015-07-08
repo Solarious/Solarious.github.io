@@ -61,6 +61,7 @@ var submitButton = "submitButton";
 var playButton = "playSoundButton";
 var checkBoxes = "checkBoxes";
 var checkBoxGroup = "checkboxGroup";
+var speechSpeedInput = "speechSpeedInput"
 var orderKanaToEnglish = true;
 
 // Called when body loads
@@ -204,10 +205,11 @@ function next() {
 function playWord() {
 	getElement(submitButton).disabled = true;
 	getElement(playButton).disabled = true;
+	var speed = getElement(speechSpeedInput).value;
 	if (hasKanji(tuples[num])) {
-		speakJap(getKanji(tuples[num]), onAudioEnd);
+		speakJap(getKanji(tuples[num]), speed, onAudioEnd);
 	} else {
-		speakJap(getHiragana(tuples[num]), onAudioEnd);
+		speakJap(getHiragana(tuples[num]), speed, onAudioEnd);
 	}
 }
 

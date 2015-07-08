@@ -199,6 +199,7 @@ var submitButton = "submitButton";
 var playButton = "playSoundButton";
 var checkBoxes = "checkBoxes";
 var checkBoxGroup = "checkboxGroup";
+var speechSpeedInput = "speechSpeedInput";
 
 function setup() {
 	var nodeCheckBoxes = document.getElementById(checkBoxes);
@@ -292,7 +293,8 @@ function next() {
 function playWord() {
 	getElement(submitButton).disabled = true;
 	getElement(playButton).disabled = true;
-	speakJap(sentence[0], onAudioEnd);
+	var speed = getElement(speechSpeedInput).value;
+	speakJap(sentence[0], speed, onAudioEnd);
 }
 
 function onAudioEnd() {
