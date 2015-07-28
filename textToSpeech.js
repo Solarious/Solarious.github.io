@@ -1,3 +1,5 @@
+// onEndFunction is optional for all functions
+
 function speakJap(text, speed, onEndFunction) {
 	if (browserSupportsNaiveSpeech()) {
 		speakJapNaive(text, speed, onEndFunction);
@@ -21,10 +23,11 @@ function speakJapNaive(text, speed, onEndFunction) {
 	u.onerror = function(e) {
 		alert("speakJap had an error");
 	}
-	speechSynthesis.speak(u);
 	if (arguments.length >= 2) {
 		u.onend = onEndFunction
 	}
+	
+	speechSynthesis.speak(u);
 }
 
 function speakJapGoogle(text, speed, onEndFunction) {

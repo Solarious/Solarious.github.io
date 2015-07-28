@@ -53,6 +53,14 @@ function checkedRadioNumber() {
 	}
 }
 
+function hasKanji(array) {
+	return array.length > 2;
+}
+
+function getKanji(array) {
+	return array[2];
+}
+
 // Returns an array of the ids of all the checked checkboxes in the element/div with id=id
 function getAllChecked(id) {
 	
@@ -61,10 +69,41 @@ function getAllChecked(id) {
 //------------------------------------------------------
 
 var groups = {};
+groups["Chapter 1: Numbers 1 to 10"] = generateNumbers1to10;
+groups["Chapter 1: Numbers 1 to 100"] = generateNumbers1to99;
 groups["Chapter 3: Likes"] = generateLikes;
 groups["Chapter 4: Colours"] = generateCarColours;
 groups["Chapter 5: Locations"] = generateLocation;
 groups["Chapter 7: Days and Months"] = generateDaysAndMonths;
+
+
+var numbersOnes = [
+	['', '0', ''],
+	['いち', "1", "一"],
+	['に', "2", "二"],
+	['さん', "3", "三"],
+	['よん', "4", "四"],
+	['ご', "5", "五"],
+	['ろく', "6", "六"],
+	['なな', "7", "七"],
+	['はち', "8", "八"],
+	['きゅう', "9", "九"],
+	['じゅう', "10", "十"]
+];
+
+var numbersTens = [
+	['', '', ''],
+	['じゅう', "1", "じゅう"],
+	['にじゅう', "2", "二十"],
+	['さんじゅう', "3", "三十"],
+	['よんじゅう', "4", "四十"],
+	['ごじゅう', "5", "五十"],
+	['ろくじゅう', "6", "六十"],
+	['ななじゅう', "7", "七十"],
+	['はちじゅう', "8", "八十"],
+	['きゅうじゅう', "9", "九十"],
+	['ひゃく', "10", "百"]
+];
 
 var fieldsOfStudy = [
 	["きょういくがく", "education"],
@@ -131,6 +170,29 @@ var colours = [
 	["きいろ", "きいろい", "yellow"],
 	["むらさき", "むらさきの", "purple"]
 ];
+
+function generateNumbers1to10() {
+	var numbers = numbersOnes.slice(1);
+	var num = getRandom(numbers);
+	return num;
+}
+
+function generateNumbers1to99() {
+	var ones = numbersOnes.slice(0, -1);
+	var tens = numbersTens.slice(0, -1);
+	
+	var n2 = getRandom(tens);
+	if (n2[0] == '') {
+		ones = ones.slice(1);
+	}
+	var n1 = getRandom(ones);
+	
+	var sentenceJap = (n2[0] + '' + n1[0]).trim();
+	var sentenceEng = n2[1] + n1[1];
+	var sentenceKanji = n2[2] + n1[2];
+	
+	return [sentenceJap, sentenceEng, sentenceKanji];
+}
 
 function generateLikes() {
 	var noun = getRandom(fieldsOfStudy);
@@ -294,7 +356,11 @@ function playWord() {
 	getElement(submitButton).disabled = true;
 	getElement(playButton).disabled = true;
 	var speed = getElement(speechSpeedInput).value;
-	speakJap(sentence[0], speed, onAudioEnd);
+	if (hasKanji(sentence)) {
+		speakJap(sentence[2], speed, onAudioEnd);
+	} else {
+		speakJap(sentence[0], speed, onAudioEnd);
+	}	
 }
 
 function onAudioEnd() {
