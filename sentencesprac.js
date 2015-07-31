@@ -75,6 +75,7 @@ groups["Chapter 3: Likes"] = generateLikes;
 groups["Chapter 4: Colours"] = generateCarColours;
 groups["Chapter 5: Locations"] = generateLocation;
 groups["Chapter 7: Days and Months"] = generateDaysAndMonths;
+groups["Chapter 9: い-type modifiers"] = generateItypeModifiers;
 
 
 var numbersOnes = [
@@ -246,6 +247,73 @@ function generateDaysAndMonths() {
 	
 	var sentenceJap = genStringWS(month[0], day[0]);
 	var sentenceEng = genStringWS("The", day[2], "of", month[2]);
+	
+	return [sentenceJap, sentenceEng];
+}
+
+function generateItypeModifiers() {
+	var modifiers = [];
+	for (var i = 1; i <= 6; i++) {
+		var a = "Chapter 4: い type modifiers (part " + i + ")";
+		modifiers = modifiers.concat(words[a]);
+	}
+
+	var option = getRandom(modifiers);
+	if (option[0] == "いい") {
+		option[0] = "よい";
+	}
+	
+	var sentenceJap;
+	var sentenceEng;
+	switch(getRandom([0, 1, 2, 3])) {
+		case 0:
+			// Present/Future
+			var jWord;
+			if (option.length > 3) {
+				jWord = option[3];
+			} else {
+				jWord = option[0];
+			}
+			sentenceJap = jWord + "です";
+			sentenceEng = "It is " + option[2];
+			break;
+		case 1:
+			// Present/Future Negative
+			var jWord;
+			if (option.length > 3) {
+				jWord = option[3];
+			} else {
+				jWord = option[0];
+			}
+			jWord = jWord.slice(0, -1);
+			sentenceJap = jWord + "くないです";
+			sentenceEng = "It is not " + option[2];
+			break;
+		case 2:
+			// Past
+			var jWord;
+			if (option.length > 3) {
+				jWord = option[3];
+			} else {
+				jWord = option[0];
+			}
+			jWord = jWord.slice(0, -1);
+			sentenceJap = jWord + "かったです";
+			sentenceEng = "It was " + option[2];
+			break;
+		case 3:
+			// Past Negative
+			var jWord;
+			if (option.length > 3) {
+				jWord = option[3];
+			} else {
+				jWord = option[0];
+			}
+			jWord = jWord.slice(0, -1);
+			sentenceJap = jWord + "くなかったです";
+			sentenceEng = "It was not " + option[2];
+			break;
+	}
 	
 	return [sentenceJap, sentenceEng];
 }
