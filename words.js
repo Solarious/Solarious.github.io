@@ -689,3 +689,22 @@ words["Chapter 8: Verbs (Part 2)"] = [
 	["かかります", "kakarimasu", "(something) to take time"],
 	["わかります", "wakarimasu", "to understand"],
 ];
+
+words["Chapter 9: Seasons"] = [
+	["はる", "haru", "spring"],
+	["なつ", "natsu", "summer"],
+	["あき", "aki", "autumn"],
+	["ふゆ", "fuyu", "winter"]
+]
+
+words["Chapter 9: Weather"] = [
+	["てんき", "tenki", "weather", "天気"],
+	["あめ", "ame", "rain", "雨"],
+	["ゆき", "yuki", "snow", "雪"],
+	["はれ", "", "fine weather"],
+	["くもり", "kumori", "cloudy weather"],
+	["かぜ", "kaze", "wind"],
+	["あめがふります", "amegafurimasu", "to rain", "雨が降ります"],
+	["ゆきがふります", "yukigafurimasu", "to snow", "雪が降ります"],
+	["かぜがふきます", "kazegafukimasu", "(wind) to blow"]
+]
