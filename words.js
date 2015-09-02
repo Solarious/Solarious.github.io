@@ -690,12 +690,43 @@ words["Chapter 8: Verbs (Part 2)"] = [
 	["わかります", "wakarimasu", "to understand"],
 ];
 
+words["Chapter 9: Miscellaneous (Part 1)"] = [
+	["えはがき", "ehagaki", "postcard"],
+	["おみやげ", "omiyage", "souvenir"],
+	["おんせん", "onsen", "hot springs"]
+	["きもち", "kimochi", "feelings", "気もち"],
+	["きもちがいい", "kimochigaii", "(it) feels good/pleasant", "気もちがいい"],
+	["こわい", "kowai", "frightening/scary"],
+	["すぐに", "suguni", "at once/immediately/soon"],
+	["ゼミ", "zemi", "seminar/tutorial"]
+];
+
+words["Chapter 9: Miscellaneous (Part 2)"] = [
+	["ツアー", "tsuaa", "tour/group tour/package tour"],
+	["とまります", "tomarimasu", "to stay"],
+	["なれます", "naremasu", "to get used to/accustomed to"],
+	["～はく～か", "~haku~ka", "~ nights ~ days"],
+	["はじめて", "hajimete", "for the first time"],
+	["ほかの～", "hokano~", "another"],
+	["～のほかに", "~nohakani", "apart from"],
+];
+
+words["Chapter 9: Miscellaneous (Part 3)"] = [
+	["まず", "mazu", "first of all"],
+	["まだ", "mada", "still"],
+	["みんげいひん", "mingeihin", "folkcraft"],
+	["みんしゅく", "minshuku", "private home providing meals and lodging for tourists", "民宿"],
+	["やすみ", "yasumi", "a break/rest/holiday/vacation", "休み"],
+	["りょこう", "ryokou", "trip/travel", "旅行"],
+	["ろてんぶろ", "rotenburo", "open-ari bath"]
+];
+
 words["Chapter 9: Seasons"] = [
 	["はる", "haru", "spring"],
 	["なつ", "natsu", "summer"],
 	["あき", "aki", "autumn"],
 	["ふゆ", "fuyu", "winter"]
-]
+];
 
 words["Chapter 9: Weather"] = [
 	["てんき", "tenki", "weather", "天気"],
@@ -707,4 +738,4 @@ words["Chapter 9: Weather"] = [
 	["あめがふります", "amegafurimasu", "to rain", "雨が降ります"],
 	["ゆきがふります", "yukigafurimasu", "to snow", "雪が降ります"],
 	["かぜがふきます", "kazegafukimasu", "(wind) to blow"]
-]
+];
