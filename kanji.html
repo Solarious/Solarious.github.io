@@ -10,8 +10,9 @@
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
-		<script type="text/javascript" src="htor.js" charset="UTF-8"></script>
-		<script type="text/javascript">useKatakana = false; reversed = true;</script>
+		<script type="text/javascript" src="kanji.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="kanjiprac.js" charset="UTF-8"></script>
+		<script type="text/javascript">orderKanaToEnglish = false;</script>
 	</head>
 	<body onload="setup()">
 	
@@ -38,21 +39,27 @@
 		
 		<div id="main">
 			<div id="content">
-				<h1>Romaji to Hiragana</h1>
-				<form id="mainform" onsubmit="next(); return false;">
+				<h1>Kanji</h1>
+				<form id="mainform">
 					<table>
 						<tr>
-							<th id="textA"> </th>
-							<th id="textB"> </th>
+							<th id="textX"> </th>
+						</tr>
+						<tr>
+							<th id="textY"> </th>
 						</tr>
 					</table>
 					<br/>
-					<input type="submit" value="Start" id="submitButton" /><br /><br/>
-					<input type="checkbox" id="dhCheckbox"/>
-					<label for="dhCheckbox">Include Dakuten/Handakuten</label><br/><br/><br/>
-					<input type="button" value="Restart" id="restartButton" onclick="setup()" />
-					<p>This Exercise is designed to be used along with a pen and paper<br/>
-					As each romaji appears, write down the correct Hiragana</p>
+					<input type="button" value="Start" id="submitButton" onclick="next(); return false;" />
+					<br/><br/>
+					<input type="radio" name="kh" class="giveSpaceOnLeft" id="radioHtoK" checked="true" />
+					<label for="radioHtoK">Hiragana to Kanji</label>
+					<br/>
+					<input type="radio" name="kh" class="giveSpaceOnLeft" id="radioKtoH" />
+					<label for="radioKtoH">Kanji to Hiragana</label>
+					<br/><br/>
+					<div id="checkBoxes">Kanji Groups (select at least one):<br/></div>
+					<div><input type="button" value="Restart" id="restartButton" onclick="setup()" /></div>
 				</form>
 			</div>
 		</div>

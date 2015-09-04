@@ -48,7 +48,7 @@ function hasKanji(wordGroup) {
 
 
 // a subset of words. Contains all the words from the word groups selected by the user
-var wordTuples;
+var tuples;
 // the number of the next word-tuple in wordTuples
 var num;
 // The current stage of the program
