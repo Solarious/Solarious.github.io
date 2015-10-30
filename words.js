@@ -693,7 +693,7 @@ words["Chapter 8: Verbs (Part 2)"] = [
 words["Chapter 9: Miscellaneous (Part 1)"] = [
 	["えはがき", "ehagaki", "postcard"],
 	["おみやげ", "omiyage", "souvenir"],
-	["おんせん", "onsen", "hot springs"]
+	["おんせん", "onsen", "hot springs"],
 	["きもち", "kimochi", "feelings", "気もち"],
 	["きもちがいい", "kimochigaii", "(it) feels good/pleasant", "気もちがいい"],
 	["こわい", "kowai", "frightening/scary"],
@@ -738,4 +738,84 @@ words["Chapter 9: Weather"] = [
 	["あめがふります", "amegafurimasu", "to rain", "雨が降ります"],
 	["ゆきがふります", "yukigafurimasu", "to snow", "雪が降ります"],
 	["かぜがふきます", "kazegafukimasu", "(wind) to blow"]
+];
+
+words["Chapter 10: Miscellaneous (Part 1)"] = [
+	["いくら", "", "how much"],
+	["うりば", "", "sales floor/shop section", "売り場"],
+	["えん", "", "yen", "円"],
+	["きっと", "", "surely, certainly"],
+	["ずいぶん", "", "considerably/a lot (surpasses expectations)"],
+	["すごい", "", "wonderful/amazing/tremendous"],
+	["せん", "", "one thousand", "千"],
+	["まん", "", "ten thousand", "万"]	
+];
+
+words["Chapter 10: Miscellaneous (Part 2)"] = [
+	["てんいん", "", "shop assisstant", "店員"],
+	["でんきせいひん", "", "electronic appliances", "電気せいひん"],
+	["にんき", "", "popularity", "人気"],
+	["はじめに", "", "first/at first"],
+	["べんり(な)", "", "convinient"],
+	["～がほしい", "", "I want ~, I am looking for ~, I am interested in buying ~"],
+	["もっと", "", "more"],
+	["～や", "", "~shop/~store", "～屋"]
+];
+
+words["Chapter 11: Miscellaneous (Part 1)"] = [
+	["うれしい", "", "happy, pleased, grateful"],
+	["かっこいい", "", "good-looking, cool"],
+	["きっぷ", "", "ticket"],
+	["こうすい", "", "perfume"],
+	["こんど", "", "this time, now", "今ど"],
+	["じょうず(な)", "", "to be good at doing something, skillful"],
+	["ぜんぶ", "", "all, whole, total"],
+	["そうべつかい", "", "farewill party", "そうべつ会"]
+];
+
+words["Chapter 11: Miscellaneous (Part 2)"] = [
+	["ばしょ", "", "place, location, room, space", "場所"],
+	["ひきます", "", "to play (a stringed instrument)"],
+	["やります", "", "to do (informal)"],
+	["りょうり(します)", "", "cooking/to cook"],
+	["がっき", "", "Musical instrument"],
+	["～くん", "", "informal suffix for boys and young men", "～君"]
+];
+
+words["Chapter 11: Verbs for giving and receiving"] = [
+	["あげます", "", "to give (when someone other than yourself is the recipient)"],
+	["くれます", "", "to give (when you are the recipient)"],
+	["もらいます", "", "to receive"]
+];
+
+words["Chapter 13: Verbs (Part 1)"] = [
+	["あける", "", "to open"],
+	["シャワーをあびる", "", "to take a shower"],
+	["あらう", "", "to wash"],
+	["あるく", "", "to walk", "歩く"],
+	["いそぐ", "", "to rush, to make haste"],
+	["おくる", "", "to send"],
+	["おぼえる", "", "to memorize"],
+	["おりる", "", "to get off, alight (from a vehicle)"]
+];
+
+words["Chapter 13: Verbs (Part 2)"] = [
+	["きる", "", "to wear, to put on"],
+	["けんがくする", "", "to take a field trip for study purposes", "見学する"],
+	["さがす", "", "to look for, to search for"],
+	["さく", "", "to bloom"],
+	["しめる", "", "to close"],
+	["しぬ", "", "to die"],
+	["たつ", "", "to pass (by)/go by"],
+	["つかる", "", "to use", "使う"]
+];
+
+words["Chapter 13: Verbs (Part 3)"] = [
+	["できる", "", "to be made, to come into existance, to be formed"],
+	["とる", "", "to take, to pass"],
+	["なく", "", "(of humans) to cry, (of animals, birds) to bark, chirp, etc"],
+	["ぬぐ", "", "to take off one's clothes or shoes"],
+	["のる", "", "to ride, to get on"],
+	["はしる", "", "to run"],
+	["もどる", "", "to return"]
 ];
