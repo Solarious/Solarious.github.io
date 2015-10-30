@@ -12,6 +12,14 @@ function setElementText(id, text) {
 	document.getElementById(id).textContent = text;
 }
 
+function getRomaji(wordGroup) {
+	if (wordGroup[1] === "") {
+		return hiraganaToRomaji(wordGroup[0]);
+	} else {
+		return wordGroup[1];
+	}
+}
+
 function createWordsTable() {
 	var tableNode = document.createElement("table");
 	document.getElementById("wordList").appendChild(tableNode);
@@ -48,7 +56,7 @@ function createWordsTable() {
 			} else {
 				tdNodes[1].textContent = words[key][i][0];
 			}
-			tdNodes[2].textContent = words[key][i][1];
+			tdNodes[2].textContent = getRomaji(words[key][i]);
 			tdNodes[3].textContent = words[key][i][2];
 		}
 	}

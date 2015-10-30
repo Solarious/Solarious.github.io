@@ -14,7 +14,7 @@ function hiraganaToRomaji(word) {
 	
 	while (pointer < length) {
 		var sl;
-		if ((pointer + 1 < length) && isShChJ(word.charAt(pointer))) {
+		if ((pointer + 1 < length) && isShChJ(word.charAt(pointer)) && isSmallY(word.charAt(pointer + 1))) {
 			sl = 2;
 		} else if (word.charAt(pointer) == "っ") {
 			dc = true;
@@ -143,4 +143,10 @@ htor = {
 	"ぷ": "pu",
 	"ぺ": "pe",
 	"ぽ": "po",
+	
+	"（": "(",
+	"）": ")",
+	"(": "(",
+	")": ")",
+	"～": "~",
 };

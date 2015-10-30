@@ -31,7 +31,11 @@ function getHiragana(wordGroup) {
 }
 
 function getRomaji(wordGroup) {
-	return wordGroup[1];
+	if (wordGroup[1] === "") {
+		return hiraganaToRomaji(getHiragana(wordGroup));
+	} else {
+		return wordGroup[1];
+	}
 }
 
 function getEnglish(wordGroup) {
@@ -277,8 +281,7 @@ function showRomajiA() {
 	if (stage == 1 || stage == 2 || stage == 3) {
 		var romaji = getRomaji(tuples[num]);
 		if (getElement(textB).textContent == romaji) {
-			// If textA already has romaji
-			
+			// If textB already has romaji
 			if (isChecked(useKanji) && hasKanji(tuples[num])) {
 				// If kanji in textA, switch back to hiragana
 				setElementText(textB, getHiragana(tuples[num]));
@@ -286,9 +289,10 @@ function showRomajiA() {
 			} else {
 				// If not kanji in texA, make empty
 				setElementText(textB, "");
+				setElementValue(showRomajiKana, "Show Romaji");
 			}
 		} else {
-			// if textA is empty or has hiragana/katakana
+			// if textB is empty or has hiragana/katakana
 			setElementText(textB, romaji);
 			if (isChecked(useKanji) && hasKanji(tuples[num])) {
 				setElementValue(showRomajiKana, "Show Kana");
