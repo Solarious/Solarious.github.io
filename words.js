@@ -718,7 +718,7 @@ words["Chapter 9: Miscellaneous (Part 3)"] = [
 	["みんしゅく", "minshuku", "private home providing meals and lodging for tourists", "民宿"],
 	["やすみ", "yasumi", "a break/rest/holiday/vacation", "休み"],
 	["りょこう", "ryokou", "trip/travel", "旅行"],
-	["ろてんぶろ", "rotenburo", "open-ari bath"]
+	["ろてんぶろ", "rotenburo", "open-air bath"]
 ];
 
 words["Chapter 9: Seasons"] = [
@@ -735,8 +735,8 @@ words["Chapter 9: Weather"] = [
 	["はれ", "", "fine weather"],
 	["くもり", "kumori", "cloudy weather"],
 	["かぜ", "kaze", "wind"],
-	["あめがふります", "amegafurimasu", "to rain", "雨が降ります"],
-	["ゆきがふります", "yukigafurimasu", "to snow", "雪が降ります"],
+	["あめがふります", "amegafurimasu", "to rain", "雨がふります"],
+	["ゆきがふります", "yukigafurimasu", "to snow", "雪がふります"],
 	["かぜがふきます", "kazegafukimasu", "(wind) to blow"]
 ];
 
