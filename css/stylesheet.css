@@ -214,6 +214,11 @@ input[type="checkbox"] {
 	overflow: hidden;
 }
 
+.classClearFloat  {
+	clear: both;
+	overflow: hidden;
+}
+
 #wordList table, #wordList td, #wordList th {
 	border: 1px solid black;
 }

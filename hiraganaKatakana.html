@@ -11,8 +11,7 @@
 			<link rel="stylesheet" type="text/css" href="iestylesheet.css" />
 		<![endif]-->
 		<link rel="icon" type="image/png" href="favicon.ico"/>
-		<script type="text/javascript" src="js/htor.js" charset="UTF-8"></script>
-		<script type="text/javascript">useKatakana = true;</script>
+		<script type="text/javascript" src="js/hiraganaKatakana.js" charset="UTF-8"></script>
 	</head>
 	<body onload="setup()">
 	
@@ -36,8 +35,8 @@
 		
 		<div id="main">
 			<div id="content">
-				<h1>Katakana to Romaji</h1>
-				<form id="mainform" onsubmit="next(); return false;">
+				<h1 id="idHeader1">Hiragana to Romaji</h1>
+				<form id="mainform" onsubmit="event.preventDefault(); next();">
 					<table>
 						<tr>
 							<th id="textA"> </th>
@@ -46,12 +45,36 @@
 						</tr>
 					</table>
 					<br/>
-					Type the rōmaji:<br/>
+					<div id="idInstructions">Type the rōmaji:</div>
 					<input type="text" size="4"	id="userInput" autocomplete="off" />
 					<input type="submit" value="Start" id="submitButton" /><br /><br/>
-					<input type="checkbox" id="dhCheckbox"/>
-					<label for="dhCheckbox">Include Dakuten/Handakuten</label><br/><br/><br/>
-					<input type="button" value="Restart" id="restartButton" onclick="setup()" />
+					<div id="idRadioHorK" class="checkboxGroup" onchange="updateLabelsHK();">
+						Kana Type:</br>
+						<input type="radio" name="nameHorK" class="giveSpaceOnLeft" id="radioH" checked="true" />
+						<label for="radioH" class="classDoNotHideThisLabel">Hiragana</label><br />
+						<input type="radio" name="nameHorK" class="giveSpaceOnLeft" id="radioK" />
+						<label for="radioK" class="classDoNotHideThisLabel">Katakana</label>
+						<br /><br />
+					</div>
+					<div id="idRadioOrder" class="checkboxGroup" onchange="updateOrder();">
+						Exercise Order:</br>
+						<input type="radio" name="nameOrder" class="giveSpaceOnLeft" id="radioKtoR" checked="true" />
+						<label for="radioKtoR" class="classDoNotHideThisLabel">Kana to Romaji</label><br />
+						<input type="radio" name="nameOrder" class="giveSpaceOnLeft" id="radioRtoK" />
+						<label for="radioRtoK" class="classDoNotHideThisLabel">Romaji to Kana</label>
+						<br /><br />
+					</div>
+					<div class="classClearFloat">
+						<input type="checkbox" id="idHideText" onchange="hideShowText();" />
+						<label for="idHideText" class="classDoNotHideThisLabel">Hide text (so you can't see all the answers below)</label><br/>
+					</div>
+					<div id="checkBoxes">
+						<div id="checkboxesDiv1" class="checkboxGroup"></div>
+						<div id="checkboxesDiv2" class="checkboxGroup"></div>
+					</div>
+					<div>
+						<input type="button" value="Restart" id="restartButton" onclick="setup()" />
+					</div>
 				</form>
 			</div>
 		</div>
