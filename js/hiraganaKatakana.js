@@ -302,7 +302,7 @@ function start() {
 	}
 	
 	if (tuples.length == 0) {
-		setElementText(textA, "Select at least one word group");
+		setElementText(textA, "Select at least one group");
 		setElementText(textB, " ");
 		return;
 	}
