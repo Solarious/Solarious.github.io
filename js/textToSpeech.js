@@ -1,11 +1,17 @@
 // onEndFunction is optional for all functions
 
 function speakJap(text, speed, onEndFunction) {
-	if (browserSupportsNaiveSpeech()) {
+	if (arguments.length >= 2) {
+		responsiveVoice.speak(text, "Japanese Female", {rate: speed, onend: onEndFunction});
+	} else {
+		responsiveVoice.speak(text, "Japanese Female", {rate: speed});
+	}
+	
+	/*if (browserSupportsNaiveSpeech()) {
 		speakJapNaive(text, speed, onEndFunction);
 	} else {
 		speakJapGoogle(text, speed, onEndFunction);
-	}
+	}*/
 }
 
 function browserSupportsNaiveSpeech() {
