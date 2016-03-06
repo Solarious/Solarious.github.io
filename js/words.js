@@ -807,7 +807,7 @@ words["Chapter 13: Verbs (Part 2)"] = [
 	["しめる", "", "to close"],
 	["しぬ", "", "to die"],
 	["たつ", "", "to pass (by)/go by"],
-	["つかる", "", "to use", "使う"]
+	["つかう", "", "to use", "使う"]
 ];
 
 words["Chapter 13: Verbs (Part 3)"] = [
