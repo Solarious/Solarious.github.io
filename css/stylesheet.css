@@ -139,6 +139,7 @@ table {
 	font-size: 400%;
 	min-width: 2em;
 	height: 1.5em;
+	font-weight: normal;
 }
 
 #textX, #textY, #textZ {
@@ -148,6 +149,8 @@ table {
 	font-size: 400%;
 	min-width: 8em;
 	height: 1.5em;
+	font-weight: normal;
+	font-family: "MS PGothic";
 }
 
 #textZ.smallerText {

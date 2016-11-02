@@ -819,3 +819,23 @@ words["Chapter 13: Verbs (Part 3)"] = [
 	["はしる", "", "to run"],
 	["もどる", "", "to return"]
 ];
+
+words["Chapter 16: Illness (Part 1)"] = [
+	["かぜをひく", "", "to catch a cold"],
+	["おなかがいたい", "", "to have a stomach ache", "おなかが痛い"],
+	["あたまがいたい", "", "to have a headache", "頭が痛い"],
+	["きぶんがわるい", "", "to feel unwell (self)", "気分が悪い"],
+	["ぐあいがわるい", "", "to feel unwell (self/other)", "ぐあいが悪い"],
+	["はきけがする", "", "to feel like vomiting"],
+	["せきがでる", "", "to have a cough", "せきが出る"]
+];
+
+words["Chapter 16: Illness (Part 2)"] = [
+	["ねつがある", "", "to have a fever"],
+	["からだがだるい", "", "to feel dull, listless"],
+	["のどがいたい", "", "to have a sore throat", "のどが痛い"],
+	["はがいたい", "", "to have a toothache", "はが痛い"],
+	["げりをする", "", "to have loose bowels"],
+	["しょくよくがない", "", "to have no appetite", "食よくがない"],
+	["さむけがする", "", "to feel chlly"]
+];
